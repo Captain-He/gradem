@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>{:C('site.name')}</title>
+</head>
+<body>
+{__CONTENT__}
+<div class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-collapse collapse" role="navigation">
+			<ul>
+				<li><a class="navbar-brand hidden-sm" href="{:U('admin/index/index')}">后台首页</a></li>
+			</ul>
+			<ul class="nav navbar-nav">
+				<li><a href="{:U('admin/article/index')}">学生管理</a></li>
+				<li><a href="{:U('admin/category/index')}">教师管理</a></li>
+				<li><a href="{:U('admin/comment/index')}">成绩表管理</a></li>
+				<li><a href="{:U('admin/link/index')}">友情链接</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right hidden-sm">
+				<li><a href="{:U('admin/index/profile')}">个人中心</a></li>
+				<li><a href="{:U('admin/index/logout')}">退出登录</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+</body>
+</html>
