@@ -19,7 +19,7 @@
 			<ul class="nav navbar-nav">
 				<li><a href="<?php echo U('admin/article/index');?>">学生管理</a></li>
 				<li><a href="<?php echo U('admin/category/index');?>">教师管理</a></li>
-				<li><a href="<?php echo U('admin/comment/index');?>">成绩表管理</a></li>
+				<li><a href="<?php echo U('admin/table/index');?>">成绩表管理</a></li>
 				<li><a href="<?php echo U('admin/link/index');?>">友情链接</a></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right hidden-sm">

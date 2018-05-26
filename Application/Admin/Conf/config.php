@@ -5,7 +5,7 @@ $config = array(
 	'URL_MODEL' => 2,
 	'URL_HTML_SUFFIX' => '',
 	'site' => array(
-		'name' => 'ThinkPHP博客'
+		'name' => 'ThinkPHP成绩管理'
 	),
 	'MODULE_ALLOW_LIST' => array('Home', 'Admin'),
 	'DEFAULT_MODULE' => 'Home',
