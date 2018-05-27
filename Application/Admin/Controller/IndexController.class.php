@@ -85,8 +85,9 @@ class IndexController extends Controller
 		}
 	}
 
-	public function upload()
+	public function test()
 	{
-		
+
 	}
+
 }

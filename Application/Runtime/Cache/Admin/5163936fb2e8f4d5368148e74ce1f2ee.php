@@ -72,14 +72,14 @@
 			    	<td><p>课程选择：</p></td>
 			    	<td>
 				    	<div style="display:none;">
-				    		<input type="checkbox" value="shu" name="kecheng[]">数学
-				    		<input type="checkbox" value="ying" name="kecheng[]">英语
-				    		<input type="checkbox" value="hua" name="kecheng[]">化学
-				    		<input type="checkbox" value="ti" name="kecheng[]">体育
-				    		<input type="checkbox" value="yin" name="kecheng[]">音乐
-				    		<input type="checkbox" value="mei" name="kecheng[]">美术
-				    		<input type="checkbox" value="zheng" name="kecheng[]">政治
-				    		<input type="checkbox" value="ji" name="kecheng[]">计算机
+				    		<input type="checkbox" value="shu__" name="kecheng[]">数学
+				    		<input type="checkbox" value="ying__" name="kecheng[]">英语
+				    		<input type="checkbox" value="hua__" name="kecheng[]">化学
+				    		<input type="checkbox" value="ti__" name="kecheng[]">体育
+				    		<input type="checkbox" value="yin__" name="kecheng[]">音乐
+				    		<input type="checkbox" value="mei__" name="kecheng[]">美术
+				    		<input type="checkbox" value="zheng__" name="kecheng[]">政治
+				    		<input type="checkbox" value="ji__" name="kecheng[]">计算机
 				    	</div> 
 						<div style="display:none;">
 							<input type="checkbox" value="shu" name="kecheng[]">数学
@@ -135,10 +135,10 @@
 				<li><a class="navbar-brand hidden-sm" href="<?php echo U('admin/index/index');?>">后台首页</a></li>
 			</ul>
 			<ul class="nav navbar-nav">
-				<li><a href="<?php echo U('admin/article/index');?>">学生管理</a></li>
-				<li><a href="<?php echo U('admin/category/index');?>">教师管理</a></li>
-				<li><a href="<?php echo U('admin/table/index');?>">成绩表管理</a></li>
-				<li><a href="<?php echo U('admin/link/index');?>">友情链接</a></li>
+				<li><a href="<?php echo U('admin/student/index');?>">学生管理</a></li>
+				<li><a href="<?php echo U('admin/teacher/index');?>">教师管理</a></li>
+				<li><a href="<?php echo U('admin/table/index');?>">学期课程表管理</a></li>
+				<li><a href="<?php echo U('admin/link/index');?>">课程成绩管理</a></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right hidden-sm">
 				<li><a href="<?php echo U('admin/index/profile');?>">个人中心</a></li>

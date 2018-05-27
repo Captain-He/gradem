@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加学生</title>
+</head>
+<body>
+<form action="__SELF__"  method="post">
+<table style="border:1px solid #0094ff;">
+	<tr>
+		<th></th>
+		<th></th>
+		<th></th>
+	</tr>
+	<tr>
+		<td><p>年级选择：</p></td>
+		<td>
+			<select name="nianji">
+				<option value="2015">2015级</option>
+				<option value="2016">2016级</option>
+				<option value="2017" selected>2017级</option>
+				<option value="2018">2018级</option>
+				<option value="2019">2019级</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td><p>专业选择：</p></td>
+		<td>
+			<select name="zhuanye">
+				<option value="1">软件工程</option>
+				<option value="2">计算机科学与技术</option>
+				<option value="3" selected>金融工程</option>
+				<option value="4">传媒设计与制作</option>
+				<option value="5">数理统计</option>
+			</select>
+		</td>
+	</tr>
+		<tr>
+		<td><p>班级选择：</p></td>
+		<td>
+			<select name="banji">
+				<option value="1">1班</option>
+				<option value="2">2班</option>
+				<option value="3" selected>3班</option>
+				<option value="4">4班</option>
+				<option value="5">5班</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td><p>输入名字：</p></td>
+		<td><input type="text" name="name"></td>
+		<td><input type="submit" value="确定"></td>
+	</tr>
+</table>
+</form>
+<table border="1">
+	<tr>
+		<th>学号</th>
+		<th>名字</th>
+		<th>密码</th>
+	</tr>
+	<volist name="result" id="vo">
+		<tr>
+			<td>{$vo.sid}</td>
+			<td>{$vo.sname}</td>
+			<td>{$vo.spass}</td>
+		</tr>
+	</volist>
+	<tr><td colspan="3" style="list-style: none;">{$page}</td></tr>
+</table>
+</body>
+</html>
