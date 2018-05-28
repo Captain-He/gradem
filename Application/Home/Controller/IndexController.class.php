@@ -26,25 +26,32 @@ class IndexController extends Controller {
               $name = I('username');
               $password = I('password');
               $usertype = I('usertype');
-              $model = new Model('stu');
-              $result = $model -> where("name = '$name'") -> getField('pwd');
-              if($password == $result)
-                {
-                    switch ($usertype) {
+              switch ($usertype) {
                       case 'student':
-                        $this->alert('student');
+                      $model = new Model('stu');
+                      $result = $model -> where("sname = '$name'") -> getField('spass');
+                      if($password == $result)
+                        {
+                             $this->success('学生登陆','../student/index');
+                        }
+                      else
+                        $this->error('密码或账号错误');
                         break;
                       case 'teacher':
-                        $this->alert('teacher');
+                         $model = new Model('tea');
+                         $result = $model -> where("tname = '$name'") -> getField('tpass');
+                      if($password == $result)
+                        {
+                             $this->success('教师登陆','../teacher/index');
+                        }
+                      else
+                        $this->error('密码或账号错误');
                         break;
                       case 'admin':
-                        $this->alert('admin');
+                        $this->error('请管理员从管理界面登陆');
                         break;
                     }
-                }
-              else
-                echo 'n';
-
+              
             } else {
                 $this->display();
             }

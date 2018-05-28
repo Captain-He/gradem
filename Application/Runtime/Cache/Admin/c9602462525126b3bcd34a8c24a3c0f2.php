@@ -7,9 +7,21 @@
 	<title><?php echo C('site.name');?></title>
 </head>
 <body>
-<div class="container">
-	<p>欢迎管理员<?php echo ($_SESSION['admin']['username']); ?>登录</p>
-</div>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>修改</title>
+</head>
+<body>
+
+<form action="<?php echo U('student/alert_s?sid='.$sid);?>">
+	修改学生 <?php echo ($sname); ?> 的信息：<br />
+	名字：<input type="text" placeholder="<?php echo ($sname); ?>" name="rename">
+	密码：<input type="text" placeholder="" name="repass">
+		<input type="submit" value="确定">
+</form>
+</body>
+</html>
 <div class="navbar navbar-inverse navbar-fixed-top">
 	<div class="container">
 		<div class="navbar-collapse collapse" role="navigation">

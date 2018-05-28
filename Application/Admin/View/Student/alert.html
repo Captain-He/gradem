@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>修改</title>
+</head>
+<body>
+
+<form action="{:U('student/alert_s?sid='.$sid)}">
+	修改学生 {$sname} 的信息：<br />
+	名字：<input type="text" placeholder="{$sname}" name="rename">
+	密码：<input type="text" placeholder="" name="repass">
+		<input type="submit" value="确定">
+</form>
+</body>
+</html>

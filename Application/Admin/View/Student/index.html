@@ -59,15 +59,17 @@
 		<th>学号</th>
 		<th>名字</th>
 		<th>密码</th>
+		<th>操作</th>
 	</tr>
 	<volist name="result" id="vo">
 		<tr>
 			<td>{$vo.sid}</td>
 			<td>{$vo.sname}</td>
-			<td>{$vo.spass}</td>
+			<td>{$vo.spass}</td><?php $sid =$vo['sid']; $sname=$vo['sname'];?>
+			<td><a href="{:U('student/delete?sid='.$sid)}" onclick="if(confirm('确认删除次学生吗？')==false)return false;">删除</a>|<a href="{:U('student/alert?sid='.$sid.'&sname='.$sname)}">修改</a></td>
 		</tr>
 	</volist>
-	<tr><td colspan="3" style="list-style: none;">{$page}</td></tr>
+	<tr><td colspan="4" style="list-style: none;">{$page}</td></tr>
 </table>
 </body>
 </html>

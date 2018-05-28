@@ -1,0 +1,72 @@
+[ 2018-05-28T13:40:28+08:00 ] ::1 /gradem/gradem/admin/student/index./student/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001183s ]
+ERR: 无法加载模块:Gradem
+
+[ 2018-05-28T13:40:57+08:00 ] ::1 /gradem/gradem/admin/student/index./student/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001076s ]
+ERR: 无法加载模块:Gradem
+
+[ 2018-05-28T13:40:58+08:00 ] ::1 /gradem/gradem/admin/student/index./student/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000604s ]
+ERR: 无法加载模块:Gradem
+
+[ 2018-05-28T13:41:00+08:00 ] ::1 /gradem/gradem/admin/student/index/student/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000457s ]
+ERR: 无法加载模块:Gradem
+
+[ 2018-05-28T13:42:40+08:00 ] ::1 /gradem/gradem/Admin/Student/index/student/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000467s ]
+ERR: 无法加载模块:Gradem
+
+[ 2018-05-28T13:42:55+08:00 ] ::1 /gradem/gradem/Admin/Student/index/student/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000631s ]
+ERR: 无法加载模块:Gradem
+
+[ 2018-05-28T13:42:58+08:00 ] ::1 /gradem/gradem/student/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000619s ]
+ERR: 无法加载模块:Gradem
+
+[ 2018-05-28T13:43:03+08:00 ] ::1 /gradem/gradem/student/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000533s ]
+ERR: 无法加载模块:Gradem
+
+[ 2018-05-28T13:43:30+08:00 ] ::1 /gradem/gradem/student/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000625s ]
+ERR: 无法加载模块:Gradem
+
+[ 2018-05-28T13:43:56+08:00 ] ::1 //gradem/student/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000737s ]
+ERR: 无法加载模块:Student
+
+[ 2018-05-28T13:44:23+08:00 ] ::1 /gradem/gradem/student/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000455s ]
+ERR: 无法加载模块:Gradem
+
+[ 2018-05-28T13:44:34+08:00 ] ::1 /gradem/gradem/student/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000818s ]
+ERR: 无法加载模块:Gradem
+

@@ -11,10 +11,11 @@
 <head>
     <meta charset="UTF-8">
     <title>添加学生</title>
-    <script type="text/javascript" src="showdate.js"></script>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="../css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
 </head>
 <body>
-<form action="/gradem/admin/teacher/index"  method="post">
+<form action="/gradem/admin/Teacher/index"  method="post">
 <table style="border:1px solid #0094ff;">
 	<tr>
 		<th></th>
@@ -24,7 +25,17 @@
 	<tr>
 		<td><p>入职年月：</p></td>
 		<td>
-		日期:<input type="text" id="st" name="st" onclick="return Calendar('st');" value="" class="text" style="width:85px;"/>-<input type="text" id="et" onclick="return Calendar('et');" value="" name="et" class="text" style="width:85px;"/>
+		<select name="nianyue">
+				<option value="2010">2010年</option>
+				<option value="2011">2011年</option>
+				<option value="2012" selected>2012年</option>
+				<option value="2013">2013年</option>
+				<option value="2014">2014年</option>
+				<option value="2015">2015年</option>
+				<option value="2016">2016年</option>
+				<option value="2017">2017年</option>
+				<option value="2018">2018年</option>
+			</select>
 		</td>
 	</tr>
 	<tr>
@@ -48,16 +59,19 @@
 </form>
 <table border="1">
 	<tr>
-		<th>学号</th>
+		<th>工号</th>
 		<th>名字</th>
 		<th>密码</th>
+		<th>操作</th>
 	</tr>
 	<?php if(is_array($result)): $i = 0; $__LIST__ = $result;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
-			<td><?php echo ($vo["sid"]); ?></td>
-			<td><?php echo ($vo["sname"]); ?></td>
-			<td><?php echo ($vo["spass"]); ?></td>
+			<td><?php echo ($vo["tid"]); ?></td>
+			<td><?php echo ($vo["tname"]); ?></td>
+			<td><?php echo ($vo["tpass"]); ?></td><?php $tid =$vo['tid']; $tname=$vo['tname'];?>
+			<td><a href="<?php echo U('teacher/delete?tid='.$tid);?>" onclick="if(confirm('确认删除此老师吗？')==false)return false;">删除</a>|<a href="<?php echo U('teacher/alert?tid='.$tid.'&tname='.$tname);?>">修改</a>
+			</td>
 		</tr><?php endforeach; endif; else: echo "" ;endif; ?>
-	<tr><td colspan="3" style="list-style: none;"><?php echo ($page); ?></td></tr>
+	<tr><td colspan="4" style="list-style: none;"><?php echo ($page); ?></td></tr>
 </table>
 </body>
 </html>
@@ -71,7 +85,6 @@
 				<li><a href="<?php echo U('admin/student/index');?>">学生管理</a></li>
 				<li><a href="<?php echo U('admin/teacher/index');?>">教师管理</a></li>
 				<li><a href="<?php echo U('admin/table/index');?>">学期课程表管理</a></li>
-				<li><a href="<?php echo U('admin/link/index');?>">课程成绩管理</a></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right hidden-sm">
 				<li><a href="<?php echo U('admin/index/profile');?>">个人中心</a></li>

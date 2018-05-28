@@ -50,5 +50,40 @@ class StudentController extends BaseController
 		$this->display();
 	}
 
+	public function alert()
+    {
+    	$sid = I('sid');
+    	$sname = I('sname');
+    	$this->assign('sid',$sid);
+    	$this->assign('sname',$sname);
+    	$this->display();
+    }
+    public function alert_s()
+    {
+    	$sid = I('sid');
+    	$sname = I('rename');
+    	$spass = I('repass');
+    	$model = M();
+    	$result = $model ->execute("update stu set sname='$sname' , spass='$spass' where sid='$sid'");
+    	if($result)
+    		$this->success('修改成功！','../../index');
+    	else
+    		$this->error('修改失败~');
+    }
+
+	public function delete()
+	{
+		$this->alert('是否删除？');
+		$sid = I('sid');
+		$model = new Model('stu');
+		$result = $model->where("sid=$sid")->delete();
+		if ($result) {
+			$this->success('删除成功');
+		}
+		else
+			$this->error('删除失败');
+	}
+
+
 }
 ?>

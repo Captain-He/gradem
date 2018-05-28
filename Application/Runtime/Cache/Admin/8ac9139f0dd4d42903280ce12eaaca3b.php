@@ -13,7 +13,7 @@
     <title>添加学生</title>
 </head>
 <body>
-<form action="/gradem/admin/student/index"  method="post">
+<form action="/gradem/admin/Student/index"  method="post">
 <table style="border:1px solid #0094ff;">
 	<tr>
 		<th></th>
@@ -68,13 +68,15 @@
 		<th>学号</th>
 		<th>名字</th>
 		<th>密码</th>
+		<th>操作</th>
 	</tr>
 	<?php if(is_array($result)): $i = 0; $__LIST__ = $result;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
 			<td><?php echo ($vo["sid"]); ?></td>
 			<td><?php echo ($vo["sname"]); ?></td>
-			<td><?php echo ($vo["spass"]); ?></td>
+			<td><?php echo ($vo["spass"]); ?></td><?php $sid =$vo['sid']; $sname=$vo['sname'];?>
+			<td><a href="<?php echo U('student/delete?sid='.$sid);?>" onclick="if(confirm('确认删除次学生吗？')==false)return false;">删除</a>|<a href="<?php echo U('student/alert?sid='.$sid.'&sname='.$sname);?>">修改</a></td>
 		</tr><?php endforeach; endif; else: echo "" ;endif; ?>
-	<tr><td colspan="3" style="list-style: none;"><?php echo ($page); ?></td></tr>
+	<tr><td colspan="4" style="list-style: none;"><?php echo ($page); ?></td></tr>
 </table>
 </body>
 </html>
@@ -88,7 +90,6 @@
 				<li><a href="<?php echo U('admin/student/index');?>">学生管理</a></li>
 				<li><a href="<?php echo U('admin/teacher/index');?>">教师管理</a></li>
 				<li><a href="<?php echo U('admin/table/index');?>">学期课程表管理</a></li>
-				<li><a href="<?php echo U('admin/link/index');?>">课程成绩管理</a></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right hidden-sm">
 				<li><a href="<?php echo U('admin/index/profile');?>">个人中心</a></li>
