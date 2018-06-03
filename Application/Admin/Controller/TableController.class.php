@@ -42,19 +42,46 @@ class TableController extends BaseController
 		$row = mysqli_fetch_assoc($result);
 		if ($row['COUNT(*)'] !='0') {
 	    // 表已经存在 是否删除重新见表
-			echo "表已经存在 是否删除重新见表";
+			$this->error($table."表已经存在 请删除重新见表");
 	    
 		} else {//表不存在 见表
 			    if (mysqli_query($conn, $sql)) {
-			    echo "数据表 MyGuests 创建成功";
+			    $this->success("表".$table."创建成功");
 			} else {
-			    echo "创建数据表错误: " . mysqli_error($conn);
+			   $this->error("创建数据表错误: " . mysqli_error($conn));
 			}
 		}
 		mysqli_close($conn);
 		}
-		else
+		else{
+			$array1 = array();
+			$db = M();
+			$db =$db ->query('show tables');
+	        foreach ($db  as $key => $value) {
+	          foreach ($value as $key2 => $value2) {
+	            if (strpos($value2, 'grade') !== false) {
+	                 array_push($array1, $value2);
+		             }
+		         }
+		     }
+		     $this->assign('name',$array1);
 			$this->display();
+		}
+	}
+
+	public function delete()
+	{
+		$xueqi = array();
+		$xueqi = I('xueqi');
+		$db = M();
+		foreach ($xueqi as $key => $value) {
+			$result = $db->execute('drop table '.$value);
+		}
+		if (!$result) {
+				$this->success("删除成功！");
+			}
+			else
+			$this->error($value."表删除失败！");
 	}
 
 }

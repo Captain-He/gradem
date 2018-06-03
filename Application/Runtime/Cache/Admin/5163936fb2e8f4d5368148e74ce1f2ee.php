@@ -124,7 +124,12 @@
 					</td>
 			    </tr>
 			</table>
-			<input type="submit" value="确定创建">
+			<input type="submit" value="确定创建"><br />
+		</form>
+		<form action="<?php echo U('table/delete?xueqi='.$xueqi);?>" method="post">
+			已经添加的学期表：<br />
+			<?php if(is_array($name)): $l = 0; $__LIST__ = $name;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$li): $mod = ($l % 2 );++$l;?><input type="checkbox" value="<?php echo ($li); ?>" name="xueqi[]"><?php echo ($li); ?><br /><?php endforeach; endif; else: echo "" ;endif; ?>
+			<input type="submit"  onclick="if(confirm('确认删除这些表吗？')==false)return false;" value="删除"><br />
 		</form>
 	</body>
 </html>

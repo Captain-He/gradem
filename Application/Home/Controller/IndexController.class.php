@@ -5,12 +5,6 @@ use Home\Model\UserViewModel;
 use Think\Model;
 class IndexController extends Controller {
 
-	
-    public function index()
-    {
-       
-    }
-
     public function alert($mes, $url = null)
     {
        echo "<script>alert('{$mes}')</script>";
@@ -19,13 +13,15 @@ class IndexController extends Controller {
       }
     }
 
-    public function land()
+    public function index()
     {
         try {
             if (IS_POST) {
               $name = I('username');
               $password = I('password');
               $usertype = I('usertype');
+              if($usertype==null)
+                $this->error("请选择登陆类型");
               switch ($usertype) {
                       case 'student':
                       $model = new Model('stu');
@@ -48,7 +44,7 @@ class IndexController extends Controller {
                         $this->error('密码或账号错误');
                         break;
                       case 'admin':
-                        $this->error('请管理员从管理界面登陆');
+                        $this->error('请管理员从管理界面登陆',U('admin/index/index'));
                         break;
                     }
               

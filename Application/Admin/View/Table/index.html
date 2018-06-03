@@ -115,7 +115,14 @@
 					</td>
 			    </tr>
 			</table>
-			<input type="submit" value="确定创建">
+			<input type="submit" value="确定创建"><br />
+		</form>
+		<form action="{:U('table/delete?xueqi='.$xueqi)}" method="post">
+			已经添加的学期表：<br />
+			<volist name="name" id="li" key="l">
+			<input type="checkbox" value="{$li}" name="xueqi[]">{$li}<br />
+			</volist>
+			<input type="submit"  onclick="if(confirm('确认删除这些表吗？')==false)return false;" value="删除"><br />
 		</form>
 	</body>
 </html>

@@ -15,7 +15,7 @@
     <link href="../css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
 </head>
 <body>
-<form action="/gradem/admin/Teacher/index"  method="post">
+<form action="/gradem/admin/teacher/index"  method="post">
 <table style="border:1px solid #0094ff;">
 	<tr>
 		<th></th>
