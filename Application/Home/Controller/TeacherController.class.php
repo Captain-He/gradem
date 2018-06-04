@@ -109,4 +109,45 @@ class TeacherController extends Controller {
          
       }
     }
+
+    public function cha()
+    {
+      $sid = I('sid');
+      $gid = I('gid');
+      $m = M();
+      $array = array();//列名称
+      $array1 = array();//分数值
+      $i=0;
+      $a = $m->query("SHOW COLUMNS FROM $gid");
+      foreach ($a as $key => $value) {
+        $array[$i++] = $value['field'];
+      }
+      $result = $m->execute("select *from $gid where sid = $sid");
+      foreach ($array as $key => $value) {
+        if (strpos($value, '__') !== false)
+        {
+           if(isset($result[$value]))
+          {
+           $array1[$value] = null;
+          }
+          else
+          {
+            $array1[$value] = $result[$value];
+          }
+        }
+          
+      }
+
+     $result2 = $m->query("select *from stu where sid=$sid");
+     $name = $result2['0']['sname'];
+     $this->assign('name',$name);
+     $this->assign('xueqi',$gid);
+     $this->assign('colums',$array);
+     $this->assign('value',$array1);
+     $this->display();
+    }
+    public function shen()
+    {
+      
+    }
 }

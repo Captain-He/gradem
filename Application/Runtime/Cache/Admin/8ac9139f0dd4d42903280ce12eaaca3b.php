@@ -13,7 +13,7 @@
     <title>添加学生</title>
 </head>
 <body>
-<form action="/gradem/admin/student/index"  method="post">
+<form action="/gradem/admin/Student/index"  method="post">
 <table style="border:1px solid #0094ff;">
 	<tr>
 		<th></th>

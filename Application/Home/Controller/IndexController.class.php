@@ -17,7 +17,7 @@ class IndexController extends Controller {
     {
         try {
             if (IS_POST) {
-              $name = I('username');
+              $id = I('userid');
               $password = I('password');
               $usertype = I('usertype');
               if($usertype==null)
@@ -25,7 +25,7 @@ class IndexController extends Controller {
               switch ($usertype) {
                       case 'student':
                       $model = new Model('stu');
-                      $result = $model -> where("sname = '$name'") -> getField('spass');
+                      $result = $model -> where("sid = '$id'") -> getField('spass');
                       if($password == $result)
                         {
                              $this->success('学生登陆','../student/index');
@@ -35,7 +35,7 @@ class IndexController extends Controller {
                         break;
                       case 'teacher':
                          $model = new Model('tea');
-                         $result = $model -> where("tname = '$name'") -> getField('tpass');
+                         $result = $model -> where("tid = '$id'") -> getField('tpass');
                       if($password == $result)
                         {
                              $this->success('教师登陆','../teacher/index');

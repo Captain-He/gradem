@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit();?><form class="" action="/gradem/home/" method="post">
+<?php if (!defined('THINK_PATH')) exit();?><form class="" action="/gradem/home/index/" method="post">
 
 
 <div align="center">
@@ -15,7 +15,7 @@
           <table width="311" align="center">
               <tr>
                   <td width="234" align="center">
-                    用户名：<input type="text" name="username" id="username" maxlength="20" required><br/><br/>
+                    用户ID：<input type="text" name="userid" id="userid" maxlength="20" required><br/><br/>
                         密&nbsp;&nbsp;码：<input type="password" name="password" id="password" required><br/><br/>
                     <p>
                           <label>

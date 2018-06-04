@@ -37,10 +37,21 @@ foreach ($sign2 as $key => $value) {
 	echo '<form action="../teacher/delete?biao='.$key.'"'.'method="post">';
 	echo '已经添加的同学';
 	echo '<br />';
+	echo '<table>';echo '<th>选择</th>';echo '<th>学生ID</th>';echo '<th>操作</th>';
 	 foreach ($value['y'] as $key1 => $value1) {
-	echo "<input type='checkbox' name='y[]' value='$value1' />$value1";
-	echo '<br />';
+	echo '<tr>';
+	echo '<th>';
+	echo "<input type='checkbox' name='y[]' value='$value1' />";
+	echo '</th>';
+	echo '<th>';
+	echo "$value1";
+	echo '</th>';
+	echo "<th>";
+	echo "<a href=\"shen?sid=$value1&gid=$key\" onclick=\"if(confirm('确认申请修改么？')==false)return false;\">申请修改</a>".'|'."<a href=\"cha?sid=$value1&gid=$key\" >查看信息</a>";
+	echo "</th>";
+	echo '</tr>';
 	 }
+    echo '</table>';
 	echo '<input type="submit" value="选中删除">';
 	echo '<br />';
 	echo '</form>';
@@ -48,10 +59,21 @@ foreach ($sign2 as $key => $value) {
 	echo '<form action="../teacher/add?biao='.$key.'"'.'method="post">';
 	echo '未添加的同学';
 	echo '<br />';
+	echo '<table>';echo '<th>选择</th>';echo '<th>学生ID</th>';echo '<th>操作</th>';
 	 foreach ($value['n'] as $key2 => $value2) {
-	echo "<input type='checkbox' name='n[]' value='$value2' />$value2";
-	echo '<br />';
+	echo '<tr>';
+	echo '<th>';
+	echo "<input type='checkbox' name='n[]' value='$value2' />";
+	echo '</th>';
+	echo '<th>';
+	echo "$value1";
+	echo '</th>';
+	echo "<th>";
+	echo "<a href=\"shen?sid=$value1&gid=$key\" onclick=\"if(confirm('确认申请修改么？')==false)return false;\">申请修改</a>".'|'."<a href=\"cha?sid=$value1&gid=$key\" >查看信息</a>";
+	echo "</th>";
+	echo '</tr>';
 	 }
+    echo '</table>';
 	echo '<input type="submit" value="选中添加">';
 	echo '<br />';
 	echo '</form>';
