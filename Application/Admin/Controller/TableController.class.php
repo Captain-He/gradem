@@ -17,11 +17,12 @@ class TableController extends BaseController
 		$zhuanye = $_POST['r'];
 		$kecheng = "";
 		foreach ($_POST['kecheng'] as $i) {
-			$kecheng .= $i.' VARCHAR(30) NOT NULL, ';
+			$kecheng .= $i.' VARCHAR(30) DEFAULT "--", ';
 		}
 		$table = "GRADE".$nianji.$xueqi.$zhuanye;
 		$sql = "CREATE TABLE ".$table." (
 			id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+			isxiu INT(2) UNSIGNED DEFAULT 0,
 			".$kecheng." sid INT(10) NOT NULL
 		)";
 		$servername = "localhost";
@@ -83,6 +84,5 @@ class TableController extends BaseController
 			else
 			$this->error($value."表删除失败！");
 	}
-
 }
 ?>

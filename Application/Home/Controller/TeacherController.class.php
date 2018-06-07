@@ -122,22 +122,21 @@ class TeacherController extends Controller {
       foreach ($a as $key => $value) {
         $array[$i++] = $value['field'];
       }
-      $result = $m->execute("select *from $gid where sid = $sid");
+      $result = $m->query("select *from $gid where sid = $sid");
       foreach ($array as $key => $value) {
         if (strpos($value, '__') !== false)
         {
-           if(isset($result[$value]))
+           if(isset($result[0][$value]) == null)
           {
-           $array1[$value] = null;
+           $this->error('此学生未加入课程~');
           }
           else
           {
-            $array1[$value] = $result[$value];
+            $array1[$value] = $result[0][$value];
           }
         }
           
       }
-
      $result2 = $m->query("select *from stu where sid=$sid");
      $name = $result2['0']['sname'];
      $this->assign('name',$name);
@@ -148,6 +147,71 @@ class TeacherController extends Controller {
     }
     public function shen()
     {
-      
+      $xueqi = I('gid');
+      $sid = I('sid');
+      $m = M();
+       $result1 = $m->query("select  isxiu from  $xueqi where sid =".$sid);
+      if($result1[0]['isxiu'] == '0')
+      {
+        $result = $m->execute("update $xueqi set isxiu = 1 where sid =".$sid);
+        if ($result) {
+          $this ->success('申请成功，请等待管理员审核！');return;
+        }else{
+          $this->error('申请失败~');
+        }
+      }
+      if($result1[0]['isxiu'] == '1')
+      {
+        $this->error('正在审核中，请耐心等待~');
+      }
+      else{
+        $this->error('申请失败~此学生未加入课程');
+      }
+    }
+    public function xiu()
+    {
+      if(IS_POST)
+      {
+        $fen = I('fen');
+        $m = M();
+        $gid = $_GET['gid'];
+        $sid = $_GET['sid'];
+        $result = $m->query("show columns from $gid");
+        $array = array();
+        foreach ($result as $key => $value) {
+          if (strpos($value['field'], '__') !== false)
+          {
+
+            array_push($array,$value['field']);
+          // $result = $m->query("update $gid set $value['field']=I($value['field']) where sid=$sid");
+          }
+        }
+       foreach ($array as $key => $value) {
+        $c = $fen[$key];
+         $result = $m->execute("update $gid set $value = '$c' where sid='$sid'");
+       }
+       if($result)
+          $this->success("修改成功！");
+        else
+          $this->error("修改失败~");
+
+      }else{
+          $sid = I('sid');
+          $gid = I('gid');
+          $array1 = array();
+          $m = M();
+          $name = $m->query("select sname from stu where sid = $sid");
+          $name =$name[0]['sname'];
+          $result = $m->query("show columns from $gid");
+          foreach ($result as $key => $value) {
+           $array1[$key] = $value;
+          }
+          $this->assign('xueke',$array1);
+          $this->assign('sid',$sid);
+          $this->assign('sname',$name);
+          $this->assign('gid',$gid);
+          $this->display();
+      }
+     
     }
 }

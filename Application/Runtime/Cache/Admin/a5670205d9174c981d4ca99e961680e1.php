@@ -85,6 +85,7 @@
 				<li><a href="<?php echo U('admin/student/index');?>">学生管理</a></li>
 				<li><a href="<?php echo U('admin/teacher/index');?>">教师管理</a></li>
 				<li><a href="<?php echo U('admin/table/index');?>">学期课程表管理</a></li>
+				<li><a href="<?php echo U('admin/list/index');?>">修改申请管理</a></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right hidden-sm">
 				<li><a href="<?php echo U('admin/index/profile');?>">个人中心</a></li>

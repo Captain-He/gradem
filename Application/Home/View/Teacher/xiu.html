@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>修改学生信息</title>
+</head>
+<body>
+学号：{$sid}<br />
+姓名：{$sname}<br />
+学期：{$gid}<br />
+<form action="xiu?gid={$gid}&sid={$sid}" method="post">
+<?php
+//var_dump($xueke);
+foreach ($xueke as $key => $value) {
+	if (strpos($value['field'], '__') !== false)
+	{
+		$a = $value['field'];
+		echo $value['field'].' :'.'<input type="input" name="fen[]" required>'.'<br />'.'<br />';
+	}
+}
+?>
+	<input type="submit" value =" 确定">
+</form>
+</volist>
+</body>
+</html>

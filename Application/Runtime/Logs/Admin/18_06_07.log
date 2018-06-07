@@ -1,0 +1,3723 @@
+[ 2018-06-07T10:35:11+08:00 ] ::1 /gradem/admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.258323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.038377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.038640s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.170462s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.170878s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.716066s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.716259s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.146511s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.146695s ]
+
+[ 2018-06-07T10:35:15+08:00 ] ::1 /gradem/admin/index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000761s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001003s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001159s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000387s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.125410s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.125674s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001144s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001356s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.046296s ]
+INFO: [ app_end ] --END-- [ RunTime:0.046526s ]
+
+[ 2018-06-07T10:35:30+08:00 ] ::1 /gradem/admin/index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000531s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000695s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000808s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.3238s ]
+SQL: SELECT * FROM `admin` WHERE `username` = 'admin' AND `password` = '123456' LIMIT 1   [ RunTime:0.0819s ]
+SQL: UPDATE `admin` SET `loginAt`='1528338929',`loginIp`='0.0.0.0' WHERE `adminId` = 1 [ RunTime:0.1363s ]
+
+[ 2018-06-07T10:35:30+08:00 ] ::1 /gradem/admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000584s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000766s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000883s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000171s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019397s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019515s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000571s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000661s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000611s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000704s ]
+
+[ 2018-06-07T10:36:45+08:00 ] ::1 /gradem/admin/teacher/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000846s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001097s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001268s ]
+SQL: SHOW COLUMNS FROM `tea` [ RunTime:0.0067s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tea` LIMIT 1   [ RunTime:0.0603s ]
+SQL: SELECT * FROM `tea` ORDER BY tid desc LIMIT 0,10   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000265s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000613s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.116266s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.116636s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001857s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002186s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002219s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002558s ]
+
+[ 2018-06-07T10:36:45+08:00 ] ::1 /gradem/admin/css/bootstrap-datetimepicker.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000665s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001560s ]
+ERR: 无法加载控制器:Css
+
+[ 2018-06-07T10:36:45+08:00 ] ::1 /gradem/admin/teacher/bootstrap/css/bootstrap.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000429s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002073s ]
+ERR: 非法操作:bootstrap
+
+[ 2018-06-07T10:39:55+08:00 ] ::1 /gradem/admin/table/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000802s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001186s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001379s ]
+SQL: show tables [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000257s ]
+NOTIC: [8] Undefined variable: xueqi D:\wamp\www\gradem\Application\Runtime\Cache\Admin\5163936fb2e8f4d5368148e74ce1f2ee.php 第 129 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022755s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000591s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000677s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000706s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000796s ]
+
+[ 2018-06-07T10:40:00+08:00 ] ::1 /gradem/Admin/table/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000535s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000690s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000792s ]
+SQL: drop table grade201611 [ RunTime:0.2917s ]
+SQL: drop table grade201711 [ RunTime:0.2252s ]
+SQL: drop table grade201811 [ RunTime:0.1849s ]
+SQL: drop table grade201911 [ RunTime:0.1982s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.034684s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.034893s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045447s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045684s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001460s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001706s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001846s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002095s ]
+
+[ 2018-06-07T10:40:02+08:00 ] ::1 /gradem/admin/table/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001105s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000724s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000844s ]
+SQL: show tables [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000220s ]
+NOTIC: [8] Undefined variable: xueqi D:\wamp\www\gradem\Application\Runtime\Cache\Admin\5163936fb2e8f4d5368148e74ce1f2ee.php 第 129 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009629s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009733s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000581s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000671s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000821s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000923s ]
+
+[ 2018-06-07T10:40:13+08:00 ] ::1 /gradem/admin/table/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000528s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000679s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000776s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000266s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000654s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023969s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024383s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002348s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002880s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002647s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003054s ]
+
+[ 2018-06-07T10:40:14+08:00 ] ::1 /gradem/admin/table/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001037s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001482s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001676s ]
+SQL: show tables [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000271s ]
+NOTIC: [8] Undefined variable: xueqi D:\wamp\www\gradem\Application\Runtime\Cache\Admin\5163936fb2e8f4d5368148e74ce1f2ee.php 第 129 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013570s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013761s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001168s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000943s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001062s ]
+
+[ 2018-06-07T10:40:23+08:00 ] ::1 /gradem/admin/table/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000524s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000981s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001293s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000259s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000645s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023647s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024099s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002034s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002405s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001543s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001784s ]
+
+[ 2018-06-07T10:40:24+08:00 ] ::1 /gradem/admin/table/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000768s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001683s ]
+SQL: show tables [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000230s ]
+NOTIC: [8] Undefined variable: xueqi D:\wamp\www\gradem\Application\Runtime\Cache\Admin\5163936fb2e8f4d5368148e74ce1f2ee.php 第 129 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009700s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009809s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001239s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001493s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001184s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001387s ]
+
+[ 2018-06-07T10:53:26+08:00 ] ::1 /gradem/admin/student/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000514s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000698s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000796s ]
+SQL: SHOW COLUMNS FROM `stu` [ RunTime:0.0094s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `stu` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `stu` ORDER BY sid desc LIMIT 0,10   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000294s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000675s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041406s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041667s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001134s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001311s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001311s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001490s ]
+
+[ 2018-06-07T10:53:31+08:00 ] ::1 /gradem/Admin/student/delete/sid/2017330
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000678s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000815s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000939s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000192s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028476s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028596s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000609s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000699s ]
+SQL: SHOW COLUMNS FROM `stu` [ RunTime:0.0040s ]
+SQL: DELETE FROM `stu` WHERE ( sid=2017330 ) [ RunTime:0.0763s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000525s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.117568s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012527s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.089704s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000100s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.102082s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002661s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003034s ]
+
+[ 2018-06-07T10:53:32+08:00 ] ::1 /gradem/admin/student/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000610s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001676s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001851s ]
+SQL: SHOW COLUMNS FROM `stu` [ RunTime:0.0052s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `stu` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `stu` ORDER BY sid desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000215s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012124s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012255s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000735s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000879s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000757s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000866s ]
+
+[ 2018-06-07T10:55:14+08:00 ] ::1 /gradem/admin/teacher/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000695s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000810s ]
+SQL: SHOW COLUMNS FROM `tea` [ RunTime:0.0058s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tea` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tea` ORDER BY tid desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010361s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010461s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000596s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000693s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001349s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001576s ]
+
+[ 2018-06-07T10:55:14+08:00 ] ::1 /gradem/admin/css/bootstrap-datetimepicker.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000651s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000754s ]
+ERR: 无法加载控制器:Css
+
+[ 2018-06-07T10:55:14+08:00 ] ::1 /gradem/admin/teacher/bootstrap/css/bootstrap.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000455s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000612s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000716s ]
+ERR: 非法操作:bootstrap
+
+[ 2018-06-07T11:09:49+08:00 ] ::1 /gradem/admin/student/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000578s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001609s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001819s ]
+SQL: SHOW COLUMNS FROM `stu` [ RunTime:0.0045s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `stu` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `stu` ORDER BY sid desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015239s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015347s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000514s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000600s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000544s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000632s ]
+
+[ 2018-06-07T11:09:57+08:00 ] ::1 /gradem/admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000925s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002186s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002467s ]
+SQL: show tables [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM grade201712 [ RunTime:0.0057s ]
+ERR: 1146:Table 'student.$value2' doesn't exist
+ [ SQL语句 ] : select *from $value2 where isxiu = 1
+ERR: 1146:Table 'student.$value2' doesn't exist
+ [ SQL语句 ] : select *from $value2 where isxiu = 1
+
+[ 2018-06-07T11:10:28+08:00 ] ::1 /gradem/admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000785s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000716s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000840s ]
+SQL: show tables [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM grade201712 [ RunTime:0.0054s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '"$value2" where isxiu = 1' at line 1
+ [ SQL语句 ] : select *from "$value2" where isxiu = 1
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '"$value2" where isxiu = 1' at line 1
+ [ SQL语句 ] : select *from "$value2" where isxiu = 1
+
+[ 2018-06-07T11:11:16+08:00 ] ::1 /gradem/admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000814s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000867s ]
+SQL: show tables [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM grade201712 [ RunTime:0.0049s ]
+SQL: select *from grade201712 where isxiu = 1 [ RunTime:0.0004s ]
+NOTIC: [2] array_push() expects parameter 1 to be array, null given D:\wamp\www\gradem\Application\Admin\Controller\ListController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM grade201722 [ RunTime:0.0267s ]
+SQL: select *from grade201722 where isxiu = 1 [ RunTime:0.0003s ]
+NOTIC: [2] array_push() expects parameter 1 to be array, null given D:\wamp\www\gradem\Application\Admin\Controller\ListController.class.php 第 32 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000773s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000880s ]
+
+[ 2018-06-07T11:12:02+08:00 ] ::1 /gradem/admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000545s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000847s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000959s ]
+SQL: show tables [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM grade201712 [ RunTime:0.0228s ]
+SQL: select *from grade201712 where isxiu = 1 [ RunTime:0.0003s ]
+NOTIC: [2] array_push() expects parameter 1 to be array, null given D:\wamp\www\gradem\Application\Admin\Controller\ListController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM grade201722 [ RunTime:0.0050s ]
+SQL: select *from grade201722 where isxiu = 1 [ RunTime:0.0003s ]
+NOTIC: [2] array_push() expects parameter 1 to be array, null given D:\wamp\www\gradem\Application\Admin\Controller\ListController.class.php 第 32 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000790s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000885s ]
+
+[ 2018-06-07T11:12:26+08:00 ] ::1 /gradem/admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000825s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000753s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000877s ]
+SQL: show tables [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM grade201712 [ RunTime:0.0054s ]
+SQL: select *from grade201712 where isxiu = 1 [ RunTime:0.0004s ]
+NOTIC: [2] array_push() expects parameter 1 to be array, null given D:\wamp\www\gradem\Application\Admin\Controller\ListController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM grade201722 [ RunTime:0.0055s ]
+SQL: select *from grade201722 where isxiu = 1 [ RunTime:0.0003s ]
+NOTIC: [2] array_push() expects parameter 1 to be array, null given D:\wamp\www\gradem\Application\Admin\Controller\ListController.class.php 第 32 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000864s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2018-06-07T11:12:41+08:00 ] ::1 /gradem/admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000707s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000670s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000789s ]
+SQL: show tables [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM grade201712 [ RunTime:0.0106s ]
+SQL: select *from grade201712 where isxiu = 1 [ RunTime:0.0003s ]
+NOTIC: [2] array_push() expects parameter 1 to be array, null given D:\wamp\www\gradem\Application\Admin\Controller\ListController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM grade201722 [ RunTime:0.0046s ]
+SQL: select *from grade201722 where isxiu = 1 [ RunTime:0.0003s ]
+NOTIC: [2] array_push() expects parameter 1 to be array, null given D:\wamp\www\gradem\Application\Admin\Controller\ListController.class.php 第 32 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000866s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000971s ]
+
+[ 2018-06-07T11:14:06+08:00 ] ::1 /gradem/admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000575s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000726s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000834s ]
+SQL: show tables [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM grade201712 [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM grade201722 [ RunTime:0.0048s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000716s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000812s ]
+
+[ 2018-06-07T12:08:20+08:00 ] ::1 /gradem/admin/student/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001053s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001468s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001690s ]
+SQL: SHOW COLUMNS FROM `stu` [ RunTime:0.0087s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `stu` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `stu` ORDER BY sid desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000230s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013847s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013990s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000920s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000939s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001062s ]
+
+[ 2018-06-07T12:08:24+08:00 ] ::1 /gradem/admin/table/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000528s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000762s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000879s ]
+SQL: show tables [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000212s ]
+NOTIC: [8] Undefined variable: xueqi D:\wamp\www\gradem\Application\Runtime\Cache\Admin\5163936fb2e8f4d5368148e74ce1f2ee.php 第 129 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011059s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011172s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000513s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000600s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000628s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000719s ]
+
+[ 2018-06-07T12:08:28+08:00 ] ::1 /gradem/Admin/table/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000601s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000729s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000887s ]
+SQL: drop table grade201712 [ RunTime:0.1853s ]
+SQL: drop table grade201722 [ RunTime:0.1335s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000321s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019120s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001084s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001265s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001340s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001518s ]
+
+[ 2018-06-07T12:08:29+08:00 ] ::1 /gradem/admin/table/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000928s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001219s ]
+SQL: show tables [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000277s ]
+NOTIC: [8] Undefined variable: xueqi D:\wamp\www\gradem\Application\Runtime\Cache\Admin\5163936fb2e8f4d5368148e74ce1f2ee.php 第 129 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010351s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010464s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000651s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000752s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000815s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000921s ]
+
+[ 2018-06-07T12:08:37+08:00 ] ::1 /gradem/admin/table/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000519s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001207s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001447s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000265s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000663s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024724s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025149s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002226s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002729s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002965s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003406s ]
+
+[ 2018-06-07T12:08:38+08:00 ] ::1 /gradem/admin/table/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000635s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000922s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001091s ]
+SQL: show tables [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000224s ]
+NOTIC: [8] Undefined variable: xueqi D:\wamp\www\gradem\Application\Runtime\Cache\Admin\5163936fb2e8f4d5368148e74ce1f2ee.php 第 129 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013437s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013587s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000606s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000699s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000841s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2018-06-07T12:08:45+08:00 ] ::1 /gradem/admin/table/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000770s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000769s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000881s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000263s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000660s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022858s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023278s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002071s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002334s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001550s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001778s ]
+
+[ 2018-06-07T12:08:46+08:00 ] ::1 /gradem/admin/table/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000989s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001478s ]
+SQL: show tables [ RunTime:0.0026s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000223s ]
+NOTIC: [8] Undefined variable: xueqi D:\wamp\www\gradem\Application\Runtime\Cache\Admin\5163936fb2e8f4d5368148e74ce1f2ee.php 第 129 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012647s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012896s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001833s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002139s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000745s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000906s ]
+
+[ 2018-06-07T12:26:49+08:00 ] ::1 /gradem/Admin/table/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000874s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001009s ]
+SQL: drop table grade201711 [ RunTime:0.1519s ]
+SQL: drop table grade201912 [ RunTime:0.1341s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000279s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000733s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024423s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024846s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002138s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002501s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003205s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003594s ]
+
+[ 2018-06-07T12:26:50+08:00 ] ::1 /gradem/admin/table/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000807s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001212s ]
+SQL: show tables [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000222s ]
+NOTIC: [8] Undefined variable: xueqi D:\wamp\www\gradem\Application\Runtime\Cache\Admin\5163936fb2e8f4d5368148e74ce1f2ee.php 第 129 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013770s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013876s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000595s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000686s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000682s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000781s ]
+
+[ 2018-06-07T12:26:55+08:00 ] ::1 /gradem/admin/table/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000564s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001533s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000267s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000661s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024437s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024870s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002154s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002522s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002803s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003215s ]
+
+[ 2018-06-07T12:26:56+08:00 ] ::1 /gradem/admin/table/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000821s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000932s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001085s ]
+SQL: show tables [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000147s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000277s ]
+NOTIC: [8] Undefined variable: xueqi D:\wamp\www\gradem\Application\Runtime\Cache\Admin\5163936fb2e8f4d5368148e74ce1f2ee.php 第 129 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010323s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010441s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000611s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000709s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000700s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000801s ]
+
+[ 2018-06-07T12:27:05+08:00 ] ::1 /gradem/admin/table/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000621s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001502s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000197s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006694s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006821s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000586s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000688s ]
+
+[ 2018-06-07T12:27:19+08:00 ] ::1 /gradem/admin/table/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000573s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000757s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000893s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000169s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006135s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006247s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000582s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000669s ]
+
+[ 2018-06-07T13:17:01+08:00 ] ::1 /gradem/admin/table/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000665s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000916s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001073s ]
+SQL: show tables [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000202s ]
+NOTIC: [8] Undefined variable: xueqi D:\wamp\www\gradem\Application\Runtime\Cache\Admin\5163936fb2e8f4d5368148e74ce1f2ee.php 第 129 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009790s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009905s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000627s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000714s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000730s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000821s ]
+
+[ 2018-06-07T13:18:17+08:00 ] ::1 /gradem/admin/table/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000537s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000716s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000816s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006339s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006472s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000637s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000730s ]
+
+[ 2018-06-07T13:18:23+08:00 ] ::1 /gradem/admin/table/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000562s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001959s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002148s ]
+NOTIC: [8] Undefined index: kecheng D:\wamp\www\gradem\Application\Admin\Controller\TableController.class.php 第 19 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\gradem\Application\Admin\Controller\TableController.class.php 第 19 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000270s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000658s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023252s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023688s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002148s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002519s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003791s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004331s ]
+
+[ 2018-06-07T13:18:24+08:00 ] ::1 /gradem/admin/table/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000846s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001534s ]
+SQL: show tables [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000198s ]
+NOTIC: [8] Undefined variable: xueqi D:\wamp\www\gradem\Application\Runtime\Cache\Admin\5163936fb2e8f4d5368148e74ce1f2ee.php 第 129 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009578s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009692s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000814s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000973s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001003s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001137s ]
+
+[ 2018-06-07T13:18:30+08:00 ] ::1 /gradem/Admin/table/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000672s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000793s ]
+SQL: drop table grade201911 [ RunTime:0.1309s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000456s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001200s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025126s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025475s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002429s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002842s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002467s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002725s ]
+
+[ 2018-06-07T13:18:31+08:00 ] ::1 /gradem/admin/table/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000580s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001559s ]
+SQL: show tables [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000253s ]
+NOTIC: [8] Undefined variable: xueqi D:\wamp\www\gradem\Application\Runtime\Cache\Admin\5163936fb2e8f4d5368148e74ce1f2ee.php 第 129 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012305s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012429s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000764s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000862s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000757s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000863s ]
+
+[ 2018-06-07T13:18:35+08:00 ] ::1 /gradem/admin/table/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000498s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000710s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000809s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000167s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006124s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006234s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000567s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000657s ]
+
+[ 2018-06-07T13:18:43+08:00 ] ::1 /gradem/admin/table/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000527s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001842s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001967s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000244s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006381s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006502s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000630s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000717s ]
+
+[ 2018-06-07T13:19:11+08:00 ] ::1 /gradem/admin/table/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000536s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000742s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000842s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000290s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000822s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024921s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025351s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002184s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002554s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003814s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004243s ]
+
+[ 2018-06-07T13:19:13+08:00 ] ::1 /gradem/admin/table/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001470s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001240s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001438s ]
+SQL: show tables [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000169s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000362s ]
+NOTIC: [8] Undefined variable: xueqi D:\wamp\www\gradem\Application\Runtime\Cache\Admin\5163936fb2e8f4d5368148e74ce1f2ee.php 第 129 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014836s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015010s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000807s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001019s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001135s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001293s ]
+
+[ 2018-06-07T13:21:56+08:00 ] ::1 /gradem/Admin/table/delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000556s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000650s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000753s ]
+SQL: drop table grade201711 [ RunTime:0.1600s ]
+SQL: drop table grade201721 [ RunTime:0.1325s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006953s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007069s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000718s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000758s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000882s ]
+
+[ 2018-06-07T13:21:57+08:00 ] ::1 /gradem/admin/table/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001621s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001867s ]
+SQL: show tables [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000227s ]
+NOTIC: [8] Undefined variable: xueqi D:\wamp\www\gradem\Application\Runtime\Cache\Admin\5163936fb2e8f4d5368148e74ce1f2ee.php 第 129 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014451s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014618s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000667s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000764s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000757s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000870s ]
+
+[ 2018-06-07T13:22:19+08:00 ] ::1 /gradem/admin/table/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000769s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001197s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000298s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000766s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016910s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017230s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002129s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002493s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002792s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003221s ]
+
+[ 2018-06-07T13:22:20+08:00 ] ::1 /gradem/admin/table/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000780s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001088s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001244s ]
+SQL: show tables [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000215s ]
+NOTIC: [8] Undefined variable: xueqi D:\wamp\www\gradem\Application\Runtime\Cache\Admin\5163936fb2e8f4d5368148e74ce1f2ee.php 第 129 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011064s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011202s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000595s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000686s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000703s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000805s ]
+
+[ 2018-06-07T13:22:28+08:00 ] ::1 /gradem/admin/table/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000539s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000737s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000852s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000273s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000676s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026058s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026485s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002107s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002471s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001899s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002181s ]
+
+[ 2018-06-07T13:22:29+08:00 ] ::1 /gradem/admin/table/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001038s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001745s ]
+SQL: show tables [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000182s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000358s ]
+NOTIC: [8] Undefined variable: xueqi D:\wamp\www\gradem\Application\Runtime\Cache\Admin\5163936fb2e8f4d5368148e74ce1f2ee.php 第 129 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011137s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011246s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000829s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000932s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001197s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001375s ]
+
+[ 2018-06-07T13:36:44+08:00 ] ::1 /gradem/admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000542s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000675s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000773s ]
+SQL: show tables [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM grade201711 [ RunTime:0.0051s ]
+SQL: SELECT *FROM grade201711 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM grade201712 [ RunTime:0.0041s ]
+SQL: SELECT *FROM grade201712 [ RunTime:0.0002s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+ERR: 模板不存在:./Application/Admin/View/layout.html
+
+[ 2018-06-07T13:38:51+08:00 ] ::1 /gradem/admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001342s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000610s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000714s ]
+SQL: show tables [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM grade201711 [ RunTime:0.0057s ]
+SQL: SELECT *FROM grade201711 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM grade201712 [ RunTime:0.0042s ]
+SQL: SELECT *FROM grade201712 [ RunTime:0.0002s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+ERR: 模板不存在:./Application/Admin/View/layout.html
+
+[ 2018-06-07T13:39:35+08:00 ] ::1 /gradem/admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000614s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000725s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000829s ]
+SQL: show tables [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM grade201711 [ RunTime:0.0452s ]
+SQL: SELECT *FROM grade201711 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM grade201712 [ RunTime:0.0045s ]
+SQL: SELECT *FROM grade201712 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000162s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003388s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003495s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000531s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000618s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000711s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000801s ]
+
+[ 2018-06-07T13:39:37+08:00 ] ::1 /gradem/admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000584s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000782s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000899s ]
+SQL: show tables [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM grade201711 [ RunTime:0.0050s ]
+SQL: SELECT *FROM grade201711 [ RunTime:0.0004s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM grade201712 [ RunTime:0.0052s ]
+SQL: SELECT *FROM grade201712 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000161s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003349s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003461s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000582s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000668s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000665s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000753s ]
+
+[ 2018-06-07T13:39:38+08:00 ] ::1 /gradem/admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000609s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000801s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000972s ]
+SQL: show tables [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM grade201711 [ RunTime:0.0238s ]
+SQL: SELECT *FROM grade201711 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM grade201712 [ RunTime:0.0044s ]
+SQL: SELECT *FROM grade201712 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000161s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003289s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003393s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000581s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000667s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000747s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000872s ]
+
+[ 2018-06-07T13:39:38+08:00 ] ::1 /gradem/admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000545s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000657s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000762s ]
+SQL: show tables [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM grade201711 [ RunTime:0.0044s ]
+SQL: SELECT *FROM grade201711 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM grade201712 [ RunTime:0.0044s ]
+SQL: SELECT *FROM grade201712 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000191s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003604s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003724s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000552s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000638s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000713s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000803s ]
+
+[ 2018-06-07T13:39:38+08:00 ] ::1 /gradem/admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000576s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000725s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000822s ]
+SQL: show tables [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM grade201711 [ RunTime:0.0050s ]
+SQL: SELECT *FROM grade201711 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0003s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM grade201712 [ RunTime:0.0050s ]
+SQL: SELECT *FROM grade201712 [ RunTime:0.0004s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003164s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003264s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000563s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000631s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000730s ]
+
+[ 2018-06-07T13:39:38+08:00 ] ::1 /gradem/admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000601s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000766s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000883s ]
+SQL: show tables [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM grade201711 [ RunTime:0.0047s ]
+SQL: SELECT *FROM grade201711 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM grade201712 [ RunTime:0.0049s ]
+SQL: SELECT *FROM grade201712 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000192s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003605s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003728s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000632s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000737s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000808s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000917s ]
+
+[ 2018-06-07T13:42:15+08:00 ] ::1 /gradem/admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000981s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001234s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001426s ]
+SQL: show tables [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM grade201711 [ RunTime:0.0049s ]
+SQL: SELECT *FROM grade201711 [ RunTime:0.0004s ]
+SQL: SELECT *FROM stu [ RunTime:0.0011s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM grade201712 [ RunTime:0.0048s ]
+SQL: SELECT *FROM grade201712 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+ERR: 模板不存在:./Application/Admin/View/layout.html
+
+[ 2018-06-07T13:43:46+08:00 ] ::1 /gradem/admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000663s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000835s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000961s ]
+SQL: show tables [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM grade201711 [ RunTime:0.0046s ]
+SQL: SELECT *FROM grade201711 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0003s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM grade201712 [ RunTime:0.0054s ]
+SQL: SELECT *FROM grade201712 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0003s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000214s ]
+NOTIC: [8] Undefined index: y D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [8] Undefined variable: sign3 D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018380s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018488s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000556s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000645s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000683s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000774s ]
+
+[ 2018-06-07T16:11:28+08:00 ] ::1 /gradem/index.php/admin/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000502s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000602s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000704s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000218s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008670s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008805s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000479s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000568s ]
+
+[ 2018-06-07T16:11:31+08:00 ] ::1 /gradem/admin/index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000450s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000582s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000686s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007735s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007851s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000555s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000591s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000685s ]
+
+[ 2018-06-07T16:12:27+08:00 ] ::1 /gradem/admin/index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000813s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000646s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000744s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `admin` WHERE `username` = 'admin' AND `password` = '123456' LIMIT 1   [ RunTime:0.0007s ]
+SQL: UPDATE `admin` SET `loginAt`='1528359147',`loginIp`='0.0.0.0' WHERE `adminId` = 1 [ RunTime:0.0679s ]
+
+[ 2018-06-07T16:12:27+08:00 ] ::1 /gradem/admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000610s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000752s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000873s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000195s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008767s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008899s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000715s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000810s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000703s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000795s ]
+
+[ 2018-06-07T16:12:28+08:00 ] ::1 /gradem/admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000438s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000771s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000919s ]
+SQL: show tables [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM grade201711 [ RunTime:0.0058s ]
+SQL: SELECT *FROM grade201711 [ RunTime:0.0004s ]
+SQL: SELECT *FROM stu [ RunTime:0.0003s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM grade201712 [ RunTime:0.0046s ]
+SQL: SELECT *FROM grade201712 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000197s ]
+NOTIC: [8] Undefined index: y D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [8] Undefined variable: sign3 D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012425s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012525s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000460s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000549s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000579s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000671s ]
+
+[ 2018-06-07T16:19:32+08:00 ] ::1 /gradem/admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000614s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001171s ]
+SQL: show tables [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM grade201711 [ RunTime:0.0060s ]
+SQL: SELECT *FROM grade201711 [ RunTime:0.0004s ]
+SQL: SELECT *FROM stu [ RunTime:0.0003s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+NOTIC: [8] Array to string conversion D:\wamp\www\gradem\Application\Admin\Controller\ListController.class.php 第 41 行.
+ERR: 1054:Unknown column 'Array' in 'where clause'
+ [ SQL语句 ] : select isxiu from grade201711 where sid=Array
+ERR: 1054:Unknown column 'Array' in 'where clause'
+ [ SQL语句 ] : select isxiu from grade201711 where sid=Array
+
+[ 2018-06-07T16:19:58+08:00 ] ::1 /gradem/admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000101s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001493s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001209s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001406s ]
+
+[ 2018-06-07T16:20:05+08:00 ] ::1 /gradem/admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000813s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000955s ]
+
+[ 2018-06-07T16:20:08+08:00 ] ::1 /gradem/admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000517s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001707s ]
+
+[ 2018-06-07T16:20:21+08:00 ] ::1 /gradem/admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000518s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000883s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001027s ]
+SQL: show tables [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM grade201711 [ RunTime:0.0055s ]
+SQL: SELECT *FROM grade201711 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017332 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017334 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017335 [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM grade201712 [ RunTime:0.0047s ]
+SQL: SELECT *FROM grade201712 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000754s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000856s ]
+
+[ 2018-06-07T16:23:42+08:00 ] ::1 /gradem/admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000609s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000783s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000903s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000204s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009186s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009314s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000643s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000750s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000781s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000890s ]
+
+[ 2018-06-07T16:23:43+08:00 ] ::1 /gradem/admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000510s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000659s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000759s ]
+SQL: show tables [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM grade201711 [ RunTime:0.0230s ]
+SQL: SELECT *FROM grade201711 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017332 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017334 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017335 [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM grade201712 [ RunTime:0.0051s ]
+SQL: SELECT *FROM grade201712 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+NOTIC: [8] Undefined index: y D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [8] Undefined variable: sign3 D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012494s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000572s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000659s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000691s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000792s ]
+
+[ 2018-06-07T16:23:48+08:00 ] ::1 /gradem/admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000546s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000609s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000720s ]
+SQL: show tables [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM grade201711 [ RunTime:0.0048s ]
+SQL: SELECT *FROM grade201711 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017332 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017334 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017335 [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM grade201712 [ RunTime:0.0056s ]
+SQL: SELECT *FROM grade201712 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000195s ]
+NOTIC: [8] Undefined index: y D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [8] Undefined variable: sign3 D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012710s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000854s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000970s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000609s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000698s ]
+
+[ 2018-06-07T16:23:56+08:00 ] ::1 /gradem/admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000541s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000787s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000988s ]
+SQL: show tables [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM grade201711 [ RunTime:0.0043s ]
+SQL: SELECT *FROM grade201711 [ RunTime:0.0004s ]
+SQL: SELECT *FROM stu [ RunTime:0.0003s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017332 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017334 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017335 [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM grade201712 [ RunTime:0.0046s ]
+SQL: SELECT *FROM grade201712 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000309s ]
+NOTIC: [8] Undefined index: y D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [8] Undefined variable: sign3 D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012295s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012400s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000432s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000521s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000569s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000660s ]
+
+[ 2018-06-07T16:24:06+08:00 ] ::1 /gradem/admin/list/cha?sid=2017332&gid=grade201711
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000621s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000749s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000868s ]
+ERR: 非法操作:cha
+
+[ 2018-06-07T16:24:51+08:00 ] ::1 /gradem/admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000613s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000876s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001019s ]
+SQL: show tables [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM grade201711 [ RunTime:0.0049s ]
+SQL: SELECT *FROM grade201711 [ RunTime:0.0004s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017332 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017334 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017335 [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM grade201712 [ RunTime:0.0053s ]
+SQL: SELECT *FROM grade201712 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000956s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001074s ]
+
+[ 2018-06-07T16:25:03+08:00 ] ::1 /gradem/admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000617s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000750s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000866s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000232s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008846s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008973s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000593s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000698s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000778s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000886s ]
+
+[ 2018-06-07T16:25:04+08:00 ] ::1 /gradem/admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000612s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000689s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000806s ]
+SQL: show tables [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM grade201711 [ RunTime:0.0050s ]
+SQL: SELECT *FROM grade201711 [ RunTime:0.0004s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017332 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017334 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017335 [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM grade201712 [ RunTime:0.0055s ]
+SQL: SELECT *FROM grade201712 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000883s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000996s ]
+
+[ 2018-06-07T16:25:18+08:00 ] ::1 /gradem/admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000558s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000734s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000873s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000209s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008598s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008726s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000663s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000774s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000937s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001053s ]
+
+[ 2018-06-07T16:25:19+08:00 ] ::1 /gradem/admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000560s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000615s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000721s ]
+SQL: show tables [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM grade201711 [ RunTime:0.0212s ]
+SQL: SELECT *FROM grade201711 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017332 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017334 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017335 [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM grade201712 [ RunTime:0.0354s ]
+SQL: SELECT *FROM grade201712 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000786s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000881s ]
+
+[ 2018-06-07T16:26:30+08:00 ] ::1 /gradem/admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000608s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000869s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000993s ]
+SQL: show tables [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM grade201711 [ RunTime:0.0050s ]
+SQL: SELECT *FROM grade201711 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017332 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017334 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017335 [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM grade201712 [ RunTime:0.0048s ]
+SQL: SELECT *FROM grade201712 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000804s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000918s ]
+
+[ 2018-06-07T16:34:49+08:00 ] ::1 /gradem/admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000617s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000877s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001043s ]
+SQL: show tables [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM grade201711 [ RunTime:0.0613s ]
+SQL: SELECT *FROM grade201711 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017332 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017334 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017335 [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM grade201712 [ RunTime:0.0048s ]
+SQL: SELECT *FROM grade201712 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000873s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000989s ]
+
+[ 2018-06-07T16:35:30+08:00 ] ::1 /gradem/admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000576s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000714s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000832s ]
+SQL: show tables [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM grade201711 [ RunTime:0.0047s ]
+SQL: SELECT *FROM grade201711 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017332 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017334 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017335 [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM grade201712 [ RunTime:0.0053s ]
+SQL: SELECT *FROM grade201712 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000837s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000940s ]
+
+[ 2018-06-07T16:36:04+08:00 ] ::1 /gradem/admin/teacher/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000583s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000746s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000863s ]
+SQL: SHOW COLUMNS FROM `tea` [ RunTime:0.0046s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tea` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tea` ORDER BY tid desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010758s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010866s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000501s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000591s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000656s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000749s ]
+
+[ 2018-06-07T16:36:04+08:00 ] ::1 /gradem/admin/css/bootstrap-datetimepicker.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000443s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000798s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000908s ]
+ERR: 无法加载控制器:Css
+
+[ 2018-06-07T16:36:04+08:00 ] ::1 /gradem/admin/teacher/bootstrap/css/bootstrap.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000442s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000687s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000808s ]
+ERR: 非法操作:bootstrap
+
+[ 2018-06-07T16:36:51+08:00 ] ::1 /gradem/admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000715s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000687s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000793s ]
+SQL: show tables [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM grade201711 [ RunTime:0.0058s ]
+SQL: SELECT *FROM grade201711 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017332 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017334 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017335 [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM grade201712 [ RunTime:0.0046s ]
+SQL: SELECT *FROM grade201712 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000754s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000862s ]
+
+[ 2018-06-07T16:36:53+08:00 ] ::1 /gradem/admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000604s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000746s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000867s ]
+SQL: show tables [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM grade201711 [ RunTime:0.0051s ]
+SQL: SELECT *FROM grade201711 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017332 [ RunTime:0.0003s ]
+SQL: select isxiu from grade201711 where sid=2017334 [ RunTime:0.0003s ]
+SQL: select isxiu from grade201711 where sid=2017335 [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM grade201712 [ RunTime:0.0044s ]
+SQL: SELECT *FROM grade201712 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000731s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000838s ]
+
+[ 2018-06-07T16:36:54+08:00 ] ::1 /gradem/admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000566s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000624s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000733s ]
+SQL: show tables [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM grade201711 [ RunTime:0.0234s ]
+SQL: SELECT *FROM grade201711 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017332 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017334 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017335 [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM grade201712 [ RunTime:0.0048s ]
+SQL: SELECT *FROM grade201712 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000755s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000848s ]
+
+[ 2018-06-07T16:37:29+08:00 ] ::1 /gradem/admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000583s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000838s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000966s ]
+SQL: show tables [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM grade201711 [ RunTime:0.0047s ]
+SQL: SELECT *FROM grade201711 [ RunTime:0.0006s ]
+SQL: SELECT *FROM stu [ RunTime:0.0003s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017332 [ RunTime:0.0003s ]
+SQL: select isxiu from grade201711 where sid=2017334 [ RunTime:0.0003s ]
+SQL: select isxiu from grade201711 where sid=2017335 [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM grade201712 [ RunTime:0.0043s ]
+SQL: SELECT *FROM grade201712 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000777s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000873s ]
+
+[ 2018-06-07T16:38:05+08:00 ] ::1 /gradem/admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000592s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000948s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001111s ]
+SQL: show tables [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM grade201711 [ RunTime:0.0056s ]
+SQL: SELECT *FROM grade201711 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017332 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017334 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017335 [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM grade201712 [ RunTime:0.0097s ]
+SQL: SELECT *FROM grade201712 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000893s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001047s ]
+
+[ 2018-06-07T16:38:18+08:00 ] ::1 /gradem/admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000483s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001068s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001187s ]
+SQL: show tables [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM grade201711 [ RunTime:0.0046s ]
+SQL: SELECT *FROM grade201711 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0003s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0003s ]
+SQL: select isxiu from grade201711 where sid=2017332 [ RunTime:0.0003s ]
+SQL: select isxiu from grade201711 where sid=2017334 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017335 [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM grade201712 [ RunTime:0.0048s ]
+SQL: SELECT *FROM grade201712 [ RunTime:0.0002s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+NOTIC: [8] Undefined index: y D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [8] Undefined variable: sign3 D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010974s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011075s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000426s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000517s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000566s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000656s ]
+
+[ 2018-06-07T16:41:51+08:00 ] ::1 /gradem/admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000554s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000711s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000837s ]
+SQL: show tables [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM grade201711 [ RunTime:0.0060s ]
+SQL: SELECT *FROM grade201711 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017332 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017334 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017335 [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM grade201712 [ RunTime:0.0043s ]
+SQL: SELECT *FROM grade201712 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+NOTIC: [8] Undefined index: y D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [8] Undefined variable: sign3 D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011255s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011359s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000563s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000578s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000667s ]
+
+[ 2018-06-07T16:42:21+08:00 ] ::1 /gradem/admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000661s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000722s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000840s ]
+SQL: show tables [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM grade201711 [ RunTime:0.0046s ]
+SQL: SELECT *FROM grade201711 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017332 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017334 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017335 [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM grade201712 [ RunTime:0.0051s ]
+SQL: SELECT *FROM grade201712 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+NOTIC: [8] Undefined index: y D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [8] Undefined variable: sign3 D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011239s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011345s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000524s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000617s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000834s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000930s ]
+
+[ 2018-06-07T16:42:53+08:00 ] ::1 /gradem/admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000594s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000899s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001029s ]
+SQL: show tables [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM grade201711 [ RunTime:0.0224s ]
+SQL: SELECT *FROM grade201711 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017332 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017334 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017335 [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM grade201712 [ RunTime:0.0045s ]
+SQL: SELECT *FROM grade201712 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000232s ]
+NOTIC: [8] Undefined index: y D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [8] Undefined variable: sign3 D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010991s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011183s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000859s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001134s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001232s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001429s ]
+
+[ 2018-06-07T16:44:13+08:00 ] ::1 /gradem/admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000106s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000868s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000784s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000905s ]
+
+[ 2018-06-07T16:44:18+08:00 ] ::1 /gradem/admin/css/bootstrap-datetimepicker.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000482s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000809s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000950s ]
+ERR: 无法加载控制器:Css
+
+[ 2018-06-07T16:44:18+08:00 ] ::1 /gradem/admin/teacher/bootstrap/css/bootstrap.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000606s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000719s ]
+ERR: 非法操作:bootstrap
+
+[ 2018-06-07T16:44:58+08:00 ] ::1 /gradem/admin/teacher/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000585s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000749s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000867s ]
+SQL: SHOW COLUMNS FROM `tea` [ RunTime:0.0048s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tea` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tea` ORDER BY tid desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011202s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011314s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000482s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000582s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000673s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000762s ]
+
+[ 2018-06-07T16:44:58+08:00 ] ::1 /gradem/admin/teacher/bootstrap/css/bootstrap.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000715s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000866s ]
+ERR: 非法操作:bootstrap
+
+[ 2018-06-07T16:44:58+08:00 ] ::1 /gradem/admin/css/bootstrap-datetimepicker.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000496s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000681s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000814s ]
+ERR: 无法加载控制器:Css
+
+[ 2018-06-07T16:44:59+08:00 ] ::1 /gradem/admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000656s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000655s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000756s ]
+
+[ 2018-06-07T16:45:29+08:00 ] ::1 /gradem/admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000595s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000650s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000755s ]
+SQL: show tables [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM grade201711 [ RunTime:0.0216s ]
+SQL: SELECT *FROM grade201711 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017332 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017334 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017335 [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM grade201712 [ RunTime:0.0044s ]
+SQL: SELECT *FROM grade201712 [ RunTime:0.0002s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000186s ]
+NOTIC: [8] Undefined index: y D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [8] Undefined variable: sign3 D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010901s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000440s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000528s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000567s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000658s ]
+
+[ 2018-06-07T16:49:36+08:00 ] ::1 /gradem/admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000614s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000782s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000900s ]
+SQL: show tables [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM grade201711 [ RunTime:0.0051s ]
+SQL: SELECT *FROM grade201711 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017332 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017334 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017335 [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM grade201712 [ RunTime:0.0049s ]
+SQL: SELECT *FROM grade201712 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000201s ]
+NOTIC: [8] Undefined index: y D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [8] Undefined variable: sign3 D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011372s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011478s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000624s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000712s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000714s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000802s ]
+
+[ 2018-06-07T16:49:39+08:00 ] ::1 /gradem/admin/list/yes?sid=2017332&gid=grade201711
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000886s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001141s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001334s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'updata grade201711 set isxiu = 2 where sid = 2017332' at line 1
+ [ SQL语句 ] : updata grade201711 set isxiu = 2 where sid = 2017332
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'updata grade201711 set isxiu = 2 where sid = 2017332' at line 1
+ [ SQL语句 ] : updata grade201711 set isxiu = 2 where sid = 2017332
+
+[ 2018-06-07T16:50:26+08:00 ] ::1 /gradem/admin/list/yes?sid=2017332&gid=grade201711
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000812s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000736s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000873s ]
+SQL: update grade201711 set isxiu = 2 where sid = 2017332 [ RunTime:0.0509s ]
+ERR: :
+ [ SQL语句 ] : update grade201711 set isxiu = 2 where sid = 2017332
+ERR: :
+ [ SQL语句 ] : update grade201711 set isxiu = 2 where sid = 2017332
+
+[ 2018-06-07T16:50:45+08:00 ] ::1 /gradem/admin/list/yes?sid=2017332&gid=grade201711
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000596s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000739s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000855s ]
+ERR: Think\Model:execude方法不存在！
+
+[ 2018-06-07T16:51:07+08:00 ] ::1 /gradem/admin/list/yes?sid=2017332&gid=grade201711
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000446s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000562s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000661s ]
+SQL: update grade201711 set isxiu = 2 where sid = 2017332 [ RunTime:0.3531s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000283s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000700s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024156s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024717s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003238s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003614s ]
+
+[ 2018-06-07T16:52:00+08:00 ] ::1 /gradem/admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000622s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001184s ]
+SQL: show tables [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM grade201711 [ RunTime:0.0226s ]
+SQL: SELECT *FROM grade201711 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017332 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017334 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017335 [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM grade201712 [ RunTime:0.0047s ]
+SQL: SELECT *FROM grade201712 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000201s ]
+NOTIC: [8] Undefined index: y D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [8] Undefined variable: sign3 D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011522s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011629s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000533s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000619s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000661s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000748s ]
+
+[ 2018-06-07T16:52:02+08:00 ] ::1 /gradem/admin/list/no?sid=2017334&gid=grade201711
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001128s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001323s ]
+SQL: update grade201711 set isxiu = 0 where sid = 2017334 [ RunTime:0.0471s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000308s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000659s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021991s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022356s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001675s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002012s ]
+
+[ 2018-06-07T16:52:06+08:00 ] ::1 /gradem/admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000729s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000730s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000867s ]
+SQL: show tables [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM grade201711 [ RunTime:0.0053s ]
+SQL: SELECT *FROM grade201711 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0003s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017332 [ RunTime:0.0003s ]
+SQL: select isxiu from grade201711 where sid=2017334 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017335 [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM grade201712 [ RunTime:0.0046s ]
+SQL: SELECT *FROM grade201712 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+NOTIC: [8] Undefined index: y D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [8] Undefined index: y D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [8] Undefined variable: sign3 D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011114s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011216s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000537s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000568s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000661s ]
+
+[ 2018-06-07T16:53:26+08:00 ] ::1 /gradem/admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000572s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000728s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000849s ]
+SQL: show tables [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM grade201711 [ RunTime:0.0057s ]
+SQL: SELECT *FROM grade201711 [ RunTime:0.0004s ]
+SQL: SELECT *FROM stu [ RunTime:0.0003s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0003s ]
+SQL: select isxiu from grade201711 where sid=2017332 [ RunTime:0.0003s ]
+SQL: select isxiu from grade201711 where sid=2017334 [ RunTime:0.0003s ]
+SQL: select isxiu from grade201711 where sid=2017335 [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM grade201712 [ RunTime:0.0059s ]
+SQL: SELECT *FROM grade201712 [ RunTime:0.0004s ]
+SQL: SELECT *FROM stu [ RunTime:0.0003s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000190s ]
+NOTIC: [8] Undefined index: y D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [8] Undefined variable: sign3 D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012178s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012287s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000595s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000685s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000685s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000791s ]
+
+[ 2018-06-07T16:53:28+08:00 ] ::1 /gradem/admin/list/no?sid=2017335&gid=grade201711
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000527s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000733s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000854s ]
+SQL: update grade201711 set isxiu = 0 where sid = 2017335 [ RunTime:0.0721s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000270s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000843s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025872s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026283s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001785s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002156s ]
+
+[ 2018-06-07T16:53:46+08:00 ] ::1 /gradem/admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000597s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001003s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001156s ]
+SQL: show tables [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM grade201711 [ RunTime:0.0048s ]
+SQL: SELECT *FROM grade201711 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017332 [ RunTime:0.0003s ]
+SQL: select isxiu from grade201711 where sid=2017334 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017335 [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM grade201712 [ RunTime:0.0050s ]
+SQL: SELECT *FROM grade201712 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000178s ]
+NOTIC: [8] Undefined index: y D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [8] Undefined variable: sign3 D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010750s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010849s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000541s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000626s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000767s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000879s ]
+
+[ 2018-06-07T16:53:51+08:00 ] ::1 /gradem/admin/list/yes?sid=2017334&gid=grade201711
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000550s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000730s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000854s ]
+SQL: update grade201711 set isxiu = 2 where sid = 2017334 [ RunTime:0.0575s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000199s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000486s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017769s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018092s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001444s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001713s ]
+
+[ 2018-06-07T16:53:56+08:00 ] ::1 /gradem/admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000542s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000650s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000749s ]
+SQL: show tables [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM grade201711 [ RunTime:0.0737s ]
+SQL: SELECT *FROM grade201711 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017332 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017334 [ RunTime:0.0005s ]
+SQL: select isxiu from grade201711 where sid=2017335 [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM grade201712 [ RunTime:0.0100s ]
+SQL: SELECT *FROM grade201712 [ RunTime:0.0005s ]
+SQL: SELECT *FROM stu [ RunTime:0.0005s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000164s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000423s ]
+NOTIC: [8] Undefined index: y D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [8] Undefined index: y D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [8] Undefined variable: sign3 D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023063s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023238s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000671s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000788s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000844s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000966s ]
+
+[ 2018-06-07T16:55:33+08:00 ] ::1 /gradem/admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000592s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000892s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001112s ]
+SQL: show tables [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM grade201711 [ RunTime:0.0229s ]
+SQL: SELECT *FROM grade201711 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017332 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017334 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017335 [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM grade201712 [ RunTime:0.0051s ]
+SQL: SELECT *FROM grade201712 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000175s ]
+NOTIC: [8] Undefined index: y D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [8] Undefined variable: sign3 D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011110s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011222s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000555s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000647s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000692s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000796s ]
+
+[ 2018-06-07T16:55:39+08:00 ] ::1 /gradem/admin/list/yes?sid=2017335&gid=grade201711
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001553s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000765s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000887s ]
+SQL: update grade201711 set isxiu = 2 where sid = 2017335 [ RunTime:0.0458s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000178s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006229s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006374s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001714s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002062s ]
+
+[ 2018-06-07T16:55:54+08:00 ] ::1 /gradem/admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000494s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000686s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000821s ]
+SQL: show tables [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM grade201711 [ RunTime:0.0046s ]
+SQL: SELECT *FROM grade201711 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0003s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017332 [ RunTime:0.0003s ]
+SQL: select isxiu from grade201711 where sid=2017334 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017335 [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM grade201712 [ RunTime:0.0050s ]
+SQL: SELECT *FROM grade201712 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+NOTIC: [8] Undefined index: y D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [8] Undefined index: y D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [8] Undefined variable: sign3 D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011208s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011335s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000568s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000655s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000702s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000801s ]
+
+[ 2018-06-07T16:56:29+08:00 ] ::1 /gradem/admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001062s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000757s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000915s ]
+SQL: show tables [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM grade201711 [ RunTime:0.0052s ]
+SQL: SELECT *FROM grade201711 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017332 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017334 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017335 [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM grade201712 [ RunTime:0.0043s ]
+SQL: SELECT *FROM grade201712 [ RunTime:0.0002s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+SQL: select isxiu from grade201712 where sid=2017332 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201712 where sid=2017334 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201712 where sid=2017335 [ RunTime:0.0001s ]
+SQL: select isxiu from grade201712 where sid=2017344 [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+NOTIC: [8] Undefined index: y D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [8] Undefined index: y D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [8] Undefined variable: sign3 D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011325s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011438s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000552s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000605s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000700s ]
+
+[ 2018-06-07T16:56:35+08:00 ] ::1 /gradem/admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000617s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000798s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000917s ]
+SQL: show tables [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM grade201711 [ RunTime:0.0444s ]
+SQL: SELECT *FROM grade201711 [ RunTime:0.0005s ]
+SQL: SELECT *FROM stu [ RunTime:0.0003s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0003s ]
+SQL: select isxiu from grade201711 where sid=2017332 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017334 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017335 [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM grade201712 [ RunTime:0.0162s ]
+SQL: SELECT *FROM grade201712 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+SQL: select isxiu from grade201712 where sid=2017332 [ RunTime:0.0003s ]
+SQL: select isxiu from grade201712 where sid=2017334 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201712 where sid=2017335 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201712 where sid=2017344 [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000205s ]
+NOTIC: [8] Undefined index: y D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [8] Undefined variable: sign3 D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013808s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013925s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000635s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000741s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000783s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000891s ]
+
+[ 2018-06-07T16:56:40+08:00 ] ::1 /gradem/admin/list/yes?sid=2017332&gid=grade201712
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000540s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000672s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000769s ]
+SQL: update grade201712 set isxiu = 2 where sid = 2017332 [ RunTime:0.0470s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000275s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000703s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023116s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023438s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001178s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001386s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001512s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001741s ]
+
+[ 2018-06-07T16:56:42+08:00 ] ::1 /gradem/admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000900s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001134s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001322s ]
+SQL: show tables [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM grade201711 [ RunTime:0.0182s ]
+SQL: SELECT *FROM grade201711 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017332 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017334 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017335 [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM grade201712 [ RunTime:0.0050s ]
+SQL: SELECT *FROM grade201712 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+SQL: select isxiu from grade201712 where sid=2017332 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201712 where sid=2017334 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201712 where sid=2017335 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201712 where sid=2017344 [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000217s ]
+NOTIC: [8] Undefined index: y D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [8] Undefined index: y D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [8] Undefined variable: sign3 D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014469s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014656s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000740s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000906s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000881s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001042s ]
+
+[ 2018-06-07T16:57:02+08:00 ] ::1 /gradem/admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000794s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000793s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000916s ]
+SQL: show tables [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM grade201711 [ RunTime:0.0889s ]
+SQL: SELECT *FROM grade201711 [ RunTime:0.0009s ]
+SQL: SELECT *FROM stu [ RunTime:0.0008s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0008s ]
+SQL: select isxiu from grade201711 where sid=2017332 [ RunTime:0.0008s ]
+SQL: select isxiu from grade201711 where sid=2017334 [ RunTime:0.0008s ]
+SQL: select isxiu from grade201711 where sid=2017335 [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM grade201712 [ RunTime:0.0174s ]
+SQL: SELECT *FROM grade201712 [ RunTime:0.0014s ]
+SQL: SELECT *FROM stu [ RunTime:0.0010s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0005s ]
+SQL: select isxiu from grade201712 where sid=2017332 [ RunTime:0.0005s ]
+SQL: select isxiu from grade201712 where sid=2017334 [ RunTime:0.0005s ]
+SQL: select isxiu from grade201712 where sid=2017335 [ RunTime:0.0005s ]
+SQL: select isxiu from grade201712 where sid=2017344 [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000170s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000397s ]
+NOTIC: [8] Undefined index: y D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [8] Undefined variable: sign3 D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027902s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028127s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001152s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001364s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001503s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001789s ]
+
+[ 2018-06-07T16:57:16+08:00 ] ::1 /gradem/admin/list/yes?sid=2017334&gid=grade201712
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000848s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001082s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001259s ]
+SQL: update grade201712 set isxiu = 2 where sid = 2017334 [ RunTime:0.0549s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000273s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000682s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023314s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023724s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000978s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001180s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001214s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001393s ]
+
+[ 2018-06-07T16:57:17+08:00 ] ::1 /gradem/admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000958s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001565s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001803s ]
+SQL: show tables [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM grade201711 [ RunTime:0.0079s ]
+SQL: SELECT *FROM grade201711 [ RunTime:0.0004s ]
+SQL: SELECT *FROM stu [ RunTime:0.0003s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017332 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017334 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017335 [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM grade201712 [ RunTime:0.0045s ]
+SQL: SELECT *FROM grade201712 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0003s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0003s ]
+SQL: select isxiu from grade201712 where sid=2017332 [ RunTime:0.0003s ]
+SQL: select isxiu from grade201712 where sid=2017334 [ RunTime:0.0003s ]
+SQL: select isxiu from grade201712 where sid=2017335 [ RunTime:0.0003s ]
+SQL: select isxiu from grade201712 where sid=2017344 [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000198s ]
+NOTIC: [8] Undefined index: y D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [8] Undefined variable: sign3 D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014722s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014898s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000621s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000762s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000636s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000730s ]
+
+[ 2018-06-07T16:57:19+08:00 ] ::1 /gradem/admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000473s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000647s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000759s ]
+SQL: show tables [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM grade201711 [ RunTime:0.0047s ]
+SQL: SELECT *FROM grade201711 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017332 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017334 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017335 [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM grade201712 [ RunTime:0.0051s ]
+SQL: SELECT *FROM grade201712 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+SQL: select isxiu from grade201712 where sid=2017332 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201712 where sid=2017334 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201712 where sid=2017335 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201712 where sid=2017344 [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000135s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000316s ]
+NOTIC: [8] Undefined index: y D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [8] Undefined variable: sign3 D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014461s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014560s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000544s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000637s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000586s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000677s ]
+
+[ 2018-06-07T16:57:23+08:00 ] ::1 /gradem/admin/list/no?sid=2017335&gid=grade201712
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000548s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001136s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001415s ]
+SQL: update grade201712 set isxiu = 0 where sid = 2017335 [ RunTime:0.0502s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000158s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000395s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017767s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018077s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001136s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001385s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001590s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001805s ]
+
+[ 2018-06-07T16:57:24+08:00 ] ::1 /gradem/admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000934s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001496s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001780s ]
+SQL: show tables [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM grade201711 [ RunTime:0.0046s ]
+SQL: SELECT *FROM grade201711 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0004s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017332 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017334 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017335 [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM grade201712 [ RunTime:0.0041s ]
+SQL: SELECT *FROM grade201712 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+SQL: select isxiu from grade201712 where sid=2017332 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201712 where sid=2017334 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201712 where sid=2017335 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201712 where sid=2017344 [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000195s ]
+NOTIC: [8] Undefined index: y D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [8] Undefined variable: sign3 D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011451s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011570s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000647s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000779s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001007s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001179s ]
+
+[ 2018-06-07T16:57:26+08:00 ] ::1 /gradem/admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000593s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001165s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001676s ]
+SQL: show tables [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM grade201711 [ RunTime:0.0056s ]
+SQL: SELECT *FROM grade201711 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017332 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017334 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017335 [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM grade201712 [ RunTime:0.0051s ]
+SQL: SELECT *FROM grade201712 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+SQL: select isxiu from grade201712 where sid=2017332 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201712 where sid=2017334 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201712 where sid=2017335 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201712 where sid=2017344 [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000205s ]
+NOTIC: [8] Undefined index: y D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [8] Undefined variable: sign3 D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013518s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013647s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000612s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000726s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000768s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000876s ]
+
+[ 2018-06-07T17:05:06+08:00 ] ::1 /gradem/admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000641s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000888s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001035s ]
+SQL: show tables [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM grade201711 [ RunTime:0.0216s ]
+SQL: SELECT *FROM grade201711 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017332 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017334 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017335 [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM grade201712 [ RunTime:0.0052s ]
+SQL: SELECT *FROM grade201712 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+SQL: select isxiu from grade201712 where sid=2017332 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201712 where sid=2017334 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201712 where sid=2017335 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201712 where sid=2017344 [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+NOTIC: [8] Undefined index: y D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [8] Undefined variable: sign3 D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012107s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012275s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000558s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000649s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000708s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000796s ]
+
+[ 2018-06-07T17:05:12+08:00 ] ::1 /gradem/admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000664s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000858s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001018s ]
+SQL: show tables [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM grade201711 [ RunTime:0.0211s ]
+SQL: SELECT *FROM grade201711 [ RunTime:0.0004s ]
+SQL: SELECT *FROM stu [ RunTime:0.0003s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017332 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017334 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017335 [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM grade201712 [ RunTime:0.0046s ]
+SQL: SELECT *FROM grade201712 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+SQL: select isxiu from grade201712 where sid=2017332 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201712 where sid=2017334 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201712 where sid=2017335 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201712 where sid=2017344 [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000188s ]
+NOTIC: [8] Undefined index: y D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [8] Undefined variable: sign3 D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011604s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011708s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000536s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000634s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000664s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000752s ]
+
+[ 2018-06-07T20:49:56+08:00 ] ::1 /gradem/admin/student/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000864s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001173s ]
+SQL: SHOW COLUMNS FROM `stu` [ RunTime:0.0388s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `stu` LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `stu` ORDER BY sid desc LIMIT 0,10   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000470s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001010s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045931s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046210s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001610s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001784s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001437s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001600s ]
+
+[ 2018-06-07T20:49:59+08:00 ] ::1 /gradem/admin/teacher/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000679s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001064s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001197s ]
+SQL: SHOW COLUMNS FROM `tea` [ RunTime:0.0047s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tea` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tea` ORDER BY tid desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000192s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027382s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027491s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000779s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000883s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000825s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000928s ]
+
+[ 2018-06-07T20:49:59+08:00 ] ::1 /gradem/admin/css/bootstrap-datetimepicker.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000488s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000903s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001012s ]
+ERR: 无法加载控制器:Css
+
+[ 2018-06-07T20:49:59+08:00 ] ::1 /gradem/admin/teacher/bootstrap/css/bootstrap.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000914s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001676s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001929s ]
+ERR: 非法操作:bootstrap
+
+[ 2018-06-07T20:50:02+08:00 ] ::1 /gradem/admin/table/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000676s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001094s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001252s ]
+SQL: show tables [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000261s ]
+NOTIC: [8] Undefined variable: xueqi D:\wamp\www\gradem\Application\Runtime\Cache\Admin\5163936fb2e8f4d5368148e74ce1f2ee.php 第 129 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012436s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012557s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001011s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001131s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001076s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001201s ]
+
+[ 2018-06-07T20:50:04+08:00 ] ::1 /gradem/admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000107s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001982s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001007s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001137s ]
+SQL: show tables [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM grade201711 [ RunTime:0.0468s ]
+SQL: SELECT *FROM grade201711 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0003s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017332 [ RunTime:0.0003s ]
+SQL: select isxiu from grade201711 where sid=2017334 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017335 [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM grade201712 [ RunTime:0.0050s ]
+SQL: SELECT *FROM grade201712 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+SQL: select isxiu from grade201712 where sid=2017332 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201712 where sid=2017334 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201712 where sid=2017335 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201712 where sid=2017344 [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+NOTIC: [8] Undefined index: y D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [8] Undefined variable: sign3 D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058522s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058637s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000945s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001080s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001022s ]
+
+[ 2018-06-07T20:50:08+08:00 ] ::1 /gradem/admin/list/no?sid=2017335&gid=grade201712
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000537s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000855s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000955s ]
+SQL: update grade201712 set isxiu = 0 where sid = 2017335 [ RunTime:0.0424s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000229s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056077s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056316s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001859s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002110s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002350s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002627s ]
+
+[ 2018-06-07T20:50:10+08:00 ] ::1 /gradem/admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000553s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000810s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000925s ]
+SQL: show tables [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM grade201711 [ RunTime:0.0232s ]
+SQL: SELECT *FROM grade201711 [ RunTime:0.0004s ]
+SQL: SELECT *FROM stu [ RunTime:0.0003s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0003s ]
+SQL: select isxiu from grade201711 where sid=2017332 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017334 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017335 [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM grade201712 [ RunTime:0.1730s ]
+SQL: SELECT *FROM grade201712 [ RunTime:0.0008s ]
+SQL: SELECT *FROM stu [ RunTime:0.0007s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0007s ]
+SQL: select isxiu from grade201712 where sid=2017332 [ RunTime:0.0007s ]
+SQL: select isxiu from grade201712 where sid=2017334 [ RunTime:0.0007s ]
+SQL: select isxiu from grade201712 where sid=2017335 [ RunTime:0.0007s ]
+SQL: select isxiu from grade201712 where sid=2017344 [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000191s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000424s ]
+NOTIC: [8] Undefined index: y D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [8] Undefined variable: sign3 D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031031s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031327s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001697s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001913s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001907s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002141s ]
+
+[ 2018-06-07T20:50:14+08:00 ] ::1 /gradem/admin/list/yes?sid=2017344&gid=grade201712
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000623s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000872s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000987s ]
+SQL: update grade201712 set isxiu = 2 where sid = 2017344 [ RunTime:0.0567s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000302s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000768s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027641s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027949s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001281s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001449s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001550s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001725s ]
+
+[ 2018-06-07T20:50:15+08:00 ] ::1 /gradem/admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000655s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000892s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000993s ]
+SQL: show tables [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM grade201711 [ RunTime:0.0042s ]
+SQL: SELECT *FROM grade201711 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0003s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017332 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017334 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017335 [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM grade201712 [ RunTime:0.0046s ]
+SQL: SELECT *FROM grade201712 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+SQL: select isxiu from grade201712 where sid=2017332 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201712 where sid=2017334 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201712 where sid=2017335 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201712 where sid=2017344 [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000326s ]
+NOTIC: [8] Undefined index: y D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [8] Undefined index: y D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [8] Undefined variable: sign3 D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016801s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016942s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000962s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001087s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000827s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000921s ]
+
+[ 2018-06-07T20:50:36+08:00 ] ::1 /gradem/admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000758s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001508s ]
+SQL: show tables [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM grade201711 [ RunTime:0.0047s ]
+SQL: SELECT *FROM grade201711 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017332 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017334 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017335 [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM grade201712 [ RunTime:0.0053s ]
+SQL: SELECT *FROM grade201712 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+SQL: select isxiu from grade201712 where sid=2017332 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201712 where sid=2017334 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201712 where sid=2017335 [ RunTime:0.0003s ]
+SQL: select isxiu from grade201712 where sid=2017344 [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000190s ]
+NOTIC: [8] Undefined index: y D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [8] Undefined variable: sign3 D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012902s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013010s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000693s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000786s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000821s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000915s ]
+
+[ 2018-06-07T20:50:39+08:00 ] ::1 /gradem/admin/list/yes?sid=2017335&gid=grade201712
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001088s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000964s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001084s ]
+SQL: update grade201712 set isxiu = 2 where sid = 2017335 [ RunTime:0.0487s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000231s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008147s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008280s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000841s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000955s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001010s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001122s ]
+
+[ 2018-06-07T20:50:41+08:00 ] ::1 /gradem/admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000799s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001232s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001408s ]
+SQL: show tables [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM grade201711 [ RunTime:0.0053s ]
+SQL: SELECT *FROM grade201711 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017332 [ RunTime:0.0003s ]
+SQL: select isxiu from grade201711 where sid=2017334 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017335 [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM grade201712 [ RunTime:0.0053s ]
+SQL: SELECT *FROM grade201712 [ RunTime:0.0004s ]
+SQL: SELECT *FROM stu [ RunTime:0.0003s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0003s ]
+SQL: select isxiu from grade201712 where sid=2017332 [ RunTime:0.0003s ]
+SQL: select isxiu from grade201712 where sid=2017334 [ RunTime:0.0003s ]
+SQL: select isxiu from grade201712 where sid=2017335 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201712 where sid=2017344 [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000207s ]
+NOTIC: [8] Undefined index: y D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [8] Undefined index: y D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [8] Undefined variable: sign3 D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014306s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014412s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000728s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000822s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000834s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000929s ]
+
+[ 2018-06-07T20:52:06+08:00 ] ::1 /gradem/admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000746s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001488s ]
+SQL: show tables [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM grade201711 [ RunTime:0.0052s ]
+SQL: SELECT *FROM grade201711 [ RunTime:0.0004s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017332 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017334 [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM grade201712 [ RunTime:0.0049s ]
+SQL: SELECT *FROM grade201712 [ RunTime:0.0004s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+SQL: select isxiu from grade201712 where sid=2017332 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201712 where sid=2017335 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201712 where sid=2017344 [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+NOTIC: [8] Undefined index: y D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [8] Undefined index: y D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [8] Undefined variable: sign3 D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018363s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018464s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000798s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000886s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000917s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001009s ]
+
+[ 2018-06-07T20:52:32+08:00 ] ::1 /gradem/admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000845s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000974s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001093s ]
+SQL: show tables [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM grade201711 [ RunTime:0.0104s ]
+SQL: SELECT *FROM grade201711 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017332 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017334 [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM grade201712 [ RunTime:0.0046s ]
+SQL: SELECT *FROM grade201712 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+SQL: select isxiu from grade201712 where sid=2017332 [ RunTime:0.0003s ]
+SQL: select isxiu from grade201712 where sid=2017335 [ RunTime:0.0003s ]
+SQL: select isxiu from grade201712 where sid=2017344 [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000187s ]
+NOTIC: [8] Undefined variable: sign3 D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012629s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012737s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000728s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000817s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000773s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000862s ]
+
+[ 2018-06-07T20:52:37+08:00 ] ::1 /gradem/admin/list/no?sid=2017332&gid=grade201712
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000641s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002461s ]
+SQL: update grade201712 set isxiu = 0 where sid = 2017332 [ RunTime:0.0689s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000275s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000678s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020388s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020730s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002673s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003071s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003468s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003876s ]
+
+[ 2018-06-07T20:52:38+08:00 ] ::1 /gradem/admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000556s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000842s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000956s ]
+SQL: show tables [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM grade201711 [ RunTime:0.0082s ]
+SQL: SELECT *FROM grade201711 [ RunTime:0.0005s ]
+SQL: SELECT *FROM stu [ RunTime:0.0004s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0003s ]
+SQL: select isxiu from grade201711 where sid=2017332 [ RunTime:0.0003s ]
+SQL: select isxiu from grade201711 where sid=2017334 [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM grade201712 [ RunTime:0.0056s ]
+SQL: SELECT *FROM grade201712 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+SQL: select isxiu from grade201712 where sid=2017332 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201712 where sid=2017335 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201712 where sid=2017344 [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000200s ]
+NOTIC: [8] Undefined variable: sign3 D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014967s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015076s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000798s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000929s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000859s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000957s ]
+
+[ 2018-06-07T20:54:13+08:00 ] ::1 /gradem/admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000796s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001481s ]
+SQL: show tables [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM grade201711 [ RunTime:0.0108s ]
+SQL: SELECT *FROM grade201711 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017332 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017334 [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM grade201712 [ RunTime:0.0056s ]
+SQL: SELECT *FROM grade201712 [ RunTime:0.0002s ]
+SQL: SELECT *FROM stu [ RunTime:0.0002s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+SQL: select isxiu from grade201712 where sid=2017332 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201712 where sid=2017335 [ RunTime:0.0002s ]
+SQL: select isxiu from grade201712 where sid=2017344 [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000178s ]
+NOTIC: [8] Undefined variable: sign3 D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010731s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010834s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000535s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000584s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000676s ]
+
+[ 2018-06-07T20:54:15+08:00 ] ::1 /gradem/admin/list/yes?sid=2017332&gid=grade201711
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000086s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000713s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000749s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000885s ]
+SQL: update grade201711 set isxiu = 2 where sid = 2017332 [ RunTime:0.0474s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000162s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000402s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007608s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007738s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000601s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000708s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000767s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000881s ]
+
+[ 2018-06-07T20:54:16+08:00 ] ::1 /gradem/admin/list/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001014s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000832s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000970s ]
+SQL: show tables [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM grade201711 [ RunTime:0.0058s ]
+SQL: SELECT *FROM grade201711 [ RunTime:0.0004s ]
+SQL: SELECT *FROM stu [ RunTime:0.0003s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0002s ]
+SQL: select isxiu from grade201711 where sid=2017332 [ RunTime:0.0003s ]
+SQL: select isxiu from grade201711 where sid=2017334 [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM grade201712 [ RunTime:0.0052s ]
+SQL: SELECT *FROM grade201712 [ RunTime:0.0003s ]
+SQL: SELECT *FROM stu [ RunTime:0.0003s ]
+SQL: SELECT count(*) FROM stu [ RunTime:0.0003s ]
+SQL: select isxiu from grade201712 where sid=2017332 [ RunTime:0.0003s ]
+SQL: select isxiu from grade201712 where sid=2017335 [ RunTime:0.0003s ]
+SQL: select isxiu from grade201712 where sid=2017344 [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000314s ]
+NOTIC: [8] Undefined index: y D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 41 行.
+NOTIC: [8] Undefined variable: sign3 D:\wamp\www\gradem\Application\Runtime\Cache\Admin\f43f26c393803311257f23f6871cd513.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016326s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016482s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000490s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000579s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000580s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000673s ]
+

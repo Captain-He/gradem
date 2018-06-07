@@ -47,7 +47,14 @@ foreach ($sign2 as $key => $value) {
 	echo "$value1";
 	echo '</th>';
 	echo "<th>";
-	echo "<a href=\"shen?sid=$value1&gid=$key\" onclick=\"if(confirm('确认申请修改么？')==false)return false;\">申请修改</a>".'|'."<a href=\"cha?sid=$value1&gid=$key\" >查看信息</a>";
+	$m = M();
+	$result = $m->query("select isxiu from $key where sid = $value1");
+	if($result[0]['isxiu']=='2')
+		echo "<a href=\"xiu?sid=$value1&gid=$key\" >修改</a>".'|'."<a href=\"cha?sid=$value1&gid=$key\" >查看信息</a>";
+	if($result[0]['isxiu']=='1')
+		echo "<a href=\"shen?sid=$value1&gid=$key\" onclick=\"if(confirm('确认申请修改么？')==false)return false;\">审核中</a>".'|'."<a href=\"cha?sid=$value1&gid=$key\" >查看信息</a>";
+	if($result[0]['isxiu']=='0')
+		echo "<a href=\"shen?sid=$value1&gid=$key\" onclick=\"if(confirm('确认申请修改么？')==false)return false;\">申请修改</a>".'|'."<a href=\"cha?sid=$value1&gid=$key\" >查看信息</a>";
 	echo "</th>";
 	echo '</tr>';
 	 }
@@ -66,10 +73,10 @@ foreach ($sign2 as $key => $value) {
 	echo "<input type='checkbox' name='n[]' value='$value2' />";
 	echo '</th>';
 	echo '<th>';
-	echo "$value1";
+	echo "$value2";
 	echo '</th>';
 	echo "<th>";
-	echo "<a href=\"shen?sid=$value1&gid=$key\" onclick=\"if(confirm('确认申请修改么？')==false)return false;\">申请修改</a>".'|'."<a href=\"cha?sid=$value1&gid=$key\" >查看信息</a>";
+	echo "<a href=\"shen?sid=$value2&gid=$key\" onclick=\"if(confirm('确认申请修改么？')==false)return false;\">申请修改</a>".'|'."<a href=\"cha?sid=$value2&gid=$key\" >查看信息</a>";
 	echo "</th>";
 	echo '</tr>';
 	 }

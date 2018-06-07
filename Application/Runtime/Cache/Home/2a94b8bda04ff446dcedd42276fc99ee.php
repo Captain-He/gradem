@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit();?><form class="" action="/gradem/home/index/" method="post">
+<?php if (!defined('THINK_PATH')) exit();?><form class="" action="/gradem/home/index/index" method="post">
 
 
 <div align="center">
